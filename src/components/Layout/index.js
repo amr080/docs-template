@@ -126,7 +126,7 @@ const Layout = ({ children, hideFooter, size }) => {
                 style={{ position: "absolute", bottom: "32px", left: "36px" }}
               >
                 <a
-                  href="https://github.com/centrifuge"
+                  href="https://github.com/X-Financial-Technologies"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -172,7 +172,7 @@ const Layout = ({ children, hideFooter, size }) => {
                 <Box direction="row" gap="12px">
                   <Box alignSelf="start" justify="center">
                     <a
-                      href="https://github.com/centrifuge"
+                      href="https://github.com/X-Financial-Technologies"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

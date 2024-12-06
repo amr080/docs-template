@@ -128,7 +128,10 @@ done
 4. corepack yarn --version
 5. corepack yarn install
 6. corepack yarn develop
-7. http://localhost:8001
+7. [http://localhost:8001](http://localhost:8001/getting-started/introduction/welcome/)
+8. ctrl + c
+9. 
+
 
 ## Project
 
@@ -161,11 +164,6 @@ done
     - F5 browser to refresh
     - Click export in side nav
 4. [JSON Minify](https://codebeautify.org/jsonminifier) + powershell cmds for mapping
-6. 
-
-
-
-
 
 
 
@@ -175,6 +173,21 @@ done
 2. http://localhost:8000
 3. http://localhost:8001
 4. http://localhost:8001/getting-started/introduction/welcome/
+5. http://localhost:8082
+    - Swagger API
+
+## Brand Assets
+
+1. logo-xft-full.svg
+    -   Size: 500 x 500
+    -   Aspect Ratio: 1:1
+
+2. logo-centrifuge-full.svg
+    - Dimensions: 108 x 32
+    - Aspect Ratio: 27:8
+
+3. centrifuge-logo.png
+    - transparent
 
 
 
@@ -189,80 +202,6 @@ x = completed
 | unlink fork     | --        |
 | push to XFT org github       | --     |
 | new branch xft-v2      | x          |
-| rename imgs      | --          |
+| rename imgs      | x          |
+| rename imgs code reference      | x          |
 
-
-## Scripts
-
-### Global Naming Logic
-
-Get-ChildItem -Path "C:\Users\alexa\Desktop\Startup\documentation\src\images" -Recurse -File | Where-Object {
-     $_.Name -match "centrifuge|tinlake"
- } | ForEach-Object {
-     $newName = $_.Name -replace "centrifuge", "xft" -replace "tinlake", "xft"
-     Rename-Item -Path $_.FullName -NewName $newName
-     Write-Host "Renamed: $($_.Name) -> $newName"
- }
-
-Renamed: centrifuge-documentation-wordmark.svg -> xft-documentation-wordmark.svg
-Renamed: centrifuge-logo.png -> xft-logo.png
-Renamed: centrifuge_chain.svg -> xft_chain.svg
-Renamed: logo-centrifuge-full.svg -> logo-xft-full.svg
-Renamed: tinlake_logo_dev.svg -> xft_logo_dev.svg
-
-### Img reference
-
-Target folders
-1. src
-2. docs
-3. plugins
-
-$targetDirectories = @("src", "docs", "plugins")
-
-# Define the mapping of old file names to new file names
-$fileRenames = @{
-    "centrifuge-documentation-wordmark.svg" = "xft-documentation-wordmark.svg"
-    "centrifuge-logo.png" = "xft-logo.png"
-    "centrifuge_chain.svg" = "xft_chain.svg"
-    "logo-centrifuge-full.svg" = "logo-xft-full.svg"
-    "tinlake_logo_dev.svg" = "xft_logo_dev.svg"
-}
-
-$targetDirectories = @("src", "docs", "plugins")
-
-# Define the mapping of old file names to new file names
-$fileRenames = @{
-    "centrifuge-documentation-wordmark.svg" = "xft-documentation-wordmark.svg"
-    "centrifuge-logo.png" = "xft-logo.png"
-    "centrifuge_chain.svg" = "xft_chain.svg"
-    "logo-centrifuge-full.svg" = "logo-xft-full.svg"
-    "tinlake_logo_dev.svg" = "xft_logo_dev.svg"
-}
-
-foreach ($dir in $targetDirectories) {
-    $fullPath = Join-Path -Path "C:\Users\alexa\Desktop\Startup\documentation" -ChildPath $dir
-
-    # Get all relevant code files to update references
-    Get-ChildItem -Path $fullPath -Recurse -Include *.html, *.css, *.js, *.md | ForEach-Object {
-        $filePath = $_.FullName
-        $content = Get-Content -Path $filePath -Raw
-        $updatedContent = $content
-
-        # Replace old file names with new file names
-        foreach ($oldName in $fileRenames.Keys) {
-            $newName = $fileRenames[$oldName]
-            $updatedContent = $updatedContent -replace [regex]::Escape($oldName), $newName
-        }
-
-        # If changes were made, update the file
-        if ($content -ne $updatedContent) {
-            Set-Content -Path $filePath -Value $updatedContent
-            Write-Host "Updated references in $filePath"
-        }
-    }
-}
-
-Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\Home\products.js
-Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\Layout\index.js
-Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\Nav\index.js
-Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\SideNav\index.js

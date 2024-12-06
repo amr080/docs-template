@@ -151,7 +151,7 @@ export const HomePage = () => {
 
   return (
     <Layout size={size} hideFooter fullWidth>
-      <SEO title="Centrifuge Documentation" />
+      <SEO title="XFT Documentation" />
       <Box
         style={{
           maxWidth: "960px",
@@ -167,7 +167,7 @@ export const HomePage = () => {
       >
         <Box width="70%" flex="grow">
           <Heading lined level={size === "small" ? 2 : 1}>
-            Welcome to Centrifuge documentation
+            Welcome to XFT documentation
           </Heading>
           <Text
             style={{
@@ -176,10 +176,10 @@ export const HomePage = () => {
               lineHeight: "1.7em",
             }}
           >
-            Welcome to the Centrifuge documentation. If you are new, or want to
+            Welcome to the XFT documentation. If you are new, or want to
             dive deeper into how our products works head to the{" "}
             <strong>Getting Started</strong> section to understand what
-            Centrifuge is about and to get an overview of our ecosystem. As a
+            XFT is about and to get an overview of our ecosystem. As a
             user of our network, e.g. investor, issuer, or governance
             participant, you will find advice and guides in{" "}
             <strong>User Documentation</strong>. For the most up-to-date
@@ -228,7 +228,7 @@ export const HomePage = () => {
           </Link>
           <Box pad={{ horizontal: "small" }}>|</Box>
           <ExternalLink
-            href="https://centrifuge.io/contributors#careers"
+            href="https://linktr.ee/xft.reed"
             target="_blank"
           >
             work with us

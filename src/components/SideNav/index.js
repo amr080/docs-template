@@ -93,7 +93,7 @@ const SideNav = ({ onClose, size }) => {
                 weight={600}
                 style={{ position: "relative", top: "2px" }}
               >
-                Docs
+                XFT Docs
               </Text>
             </Box>
           </Link>

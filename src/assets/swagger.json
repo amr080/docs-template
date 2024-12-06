@@ -3,7 +3,7 @@
   "info": {
     "version": "2.0.0",
     "title": "Centrifuge OS Node API",
-    "description": "Centrifuge OS Node API"
+    "description": "XFT OS Node API"
   },
   "host": "localhost:8082",
   "schemes": ["http"],
