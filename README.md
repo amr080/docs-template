@@ -95,7 +95,9 @@ Updated readme items.
 
 [Github](https://github.com/amr080/docs-template)<br>
 [Google Docs](https://docs.google.com/document/d/1sSnaxfrKAFVLvP2u78ANVq4DRnUyKTvByq3y6SJ4kf4/edit?tab=t.0)<br>
-[Monorepo](https://github.com/X-Financial-Technologies/monorepo)
+[Monorepo](https://github.com/X-Financial-Technologies/monorepo)<br>
+[ChatGPT Backend](https://chatgpt.com/backend-api/share/675261dc-b0b4-8003-bc96-da98b7c56c0f)
+
 
 
 | Name | Description                | Date       |
@@ -110,15 +112,22 @@ Updated readme items.
 3. https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o
 
 ## ChatGPT Dependencies
-1. https://chatgpt.com/share/675261dc-b0b4-8003-bc96-da98b7c56c0f
-2. https://chat.openai.com/backend-api/conversation/[id]
-3. https://chat.openai.com/backend-api/conversation/[675261dc-b0b4-8003-bc96-da98b7c56c0f]
-4. [Tampermonkey](https://github.com/amr080/chatgpt-exporter) to convert conversations to files
+1. [Conversation](https://chatgpt.com/share/675261dc-b0b4-8003-bc96-da98b7c56c0f)
+2. WORKING BACKEND: 
+    - https://chatgpt.com/backend-api/share/675261dc-b0b4-8003-bc96-da98b7c56c0f
+    - https://chatgpt.com/backend-api/share/{id}
+3. [Tampermonkey](https://github.com/amr080/chatgpt-exporter) to convert conversations to files
     - Download [extension](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
     - Install ChatGPT exporter [script](https://github.com/amr080/chatgpt-exporter?tab=readme-ov-file#install)
     - F5 browser to refresh
     - Click export in side nav
-5. [JSON Minify](https://codebeautify.org/jsonminifier) + powershell cmds for mapping
+4. [JSON Minify](https://codebeautify.org/jsonminifier) + powershell cmds for mapping
+6. 
+
+
+
+
+
 
 
 ## Deployments
