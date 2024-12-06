@@ -102,8 +102,11 @@ $$
 
 ## To-Do
 
+-- = not done<br>
+x = completed
+
 | Name | Status                |
 |-------------|----------------------------|
 | unlink fork     | --        |
 | push to XFT org github       | --     |
-| new branch xft-v2      | --          |
+| new branch xft-v2      | x          |
