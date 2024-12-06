@@ -71,6 +71,45 @@ Updated readme items.
 4. $mapping = $json.mapping
 5. $mapping | ConvertTo-Json | Set-Content -Path 'mapping.json'
 6. cd C:\Users\alexa\Desktop\Startup\documentation
+7. tree
+8. ls
+9. rsync -av --include='*/' \
+         --exclude='*.png' \
+         --exclude='*.jpg' \
+         --exclude='*.jpeg' \
+         --exclude='*.svg' \
+         archive/ docs/
+10. find docs -depth -type d -name 'centrifuge-*' | while read dir; do
+    new_dir=$(echo "$dir" | sed 's/centrifuge/xft/')
+    mv "$dir" "$new_dir"
+done
+11. find docs -type f -name '*.md' -exec sed -i 's/Centrifuge/XFT/g' {} +
+12. rm -Recurse -Force .\*
+13. tree /F /A > directory_structure.txt
+14. tree /F | findstr /v "node_modules .cache public .yarn"
+15. tree docs /F
+16. tree src /F
+17. tree archive /F
+18. tree plugins /F
+19. tree docs /F > docs_structure.txt
+20. code .
+21. touch
+22. ls archive/src/images/
+23. mv src/images/centrifuge* archive/src/images/
+24. cp archive/src/images/centrifuge* src/images/
+    - cp archive/src/images/logo-centrifuge* src/images/
+    - cp archive/src/images/tinlake* src/images/
+25. cd src/images
+26. rename 's/centrifuge/xft/g' *
+    - rename 's/logo-centrifuge/logo-xft/g' *
+    - rename 's/tinlake/xft/g' *
+27. Get-ChildItem -Path ".." -Recurse -File | ForEach-Object {
+    (Get-Content $_.FullName) | ForEach-Object {
+        $_ -replace 'centrifuge', 'xft' `
+           -replace 'logo-centrifuge', 'logo-xft' `
+           -replace 'tinlake', 'xft'
+    } | Set-Content $_.FullName
+}
 
 
 
@@ -150,3 +189,10 @@ x = completed
 | unlink fork     | --        |
 | push to XFT org github       | --     |
 | new branch xft-v2      | x          |
+| rename imgs      | --          |
+
+
+## Scripts
+
+### Global Naming Logic
+
