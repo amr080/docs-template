@@ -125,18 +125,12 @@ done
 26. rename 's/centrifuge/xft/g' *
     - rename 's/logo-centrifuge/logo-xft/g' *
     - rename 's/tinlake/xft/g' *
-27. Get-ChildItem -Path ".." -Recurse -File | ForEach-Object {
-    (Get-Content $_.FullName) | ForEach-Object {
-        $_ -replace 'centrifuge', 'xft' `
-           -replace 'logo-centrifuge', 'logo-xft' `
-           -replace 'tinlake', 'xft'
-    } | Set-Content $_.FullName
-}
+27. 
 28. git checkout -b xft-v2
 29. [USE WITH CAUTION] >>> rm -Recurse -Force .\*
 30. rm -Recurse -Force .\.cache, .\public, .\node_modules
-31. Get-ChildItem -Path "C:\Users\alexa\Desktop\Startup\documentation" -Recurse -Include "*.mjs", "*.json" | Select-String -Pattern "icons/"
-32. $dirs = "C:\Users\alexa\Desktop\Startup\documentation\src", "C:\Users\alexa\Desktop\Startup\documentation\static"; $pattern = "*.mjs", "*.json"; $searchTerm = "icons/"; $files = Get-ChildItem -Path $dirs -Recurse -Include $pattern -File | Where-Object { $_.FullName -notmatch "\\node_modules\\" }; $total = $files.Count; $count = 0; foreach ($file in $files) { $count++; Write-Progress -Activity "Searching files" -Status "$count out of $total" -PercentComplete (($count / $total) * 100); Select-String -Path $file.FullName -Pattern $searchTerm }
+31. 
+32. 
 33. Remove-Item -Recurse -Force -Path .\.cache, .\public, .\node_modules
 
 
@@ -204,8 +198,29 @@ done
     - Swagger API
 
 ## Production
-1. rm -Recurse -Force .cache, .\public, .\node_modules
-2. 
+1. run powershell as admin
+2. cd C:\Users\alexa\Desktop\Startup\documentation
+3. rm -Recurse -Force .cache, .\public, .\node_modules
+4. corepack enable
+5. corepack prepare yarn@4.1.1 --activate
+6. corepack yarn --version
+7. corepack yarn install
+8. corepack yarn develop
+
+### Vercel
+Framework: Gatsby.js<br>
+Node.js Version: 22.x<br>
+URL: https://docs.xft.finance/<br>
+Branch: xft-v3<br>
+Redirect: 
+[Domain settings](https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o/settings/domains)<br>
+
+### DNS
+
+| Type | Name                | Value | TTL |
+|-------------|----------------------------|-------------|-------------|
+| CNAME     | docs        | cname.vercel-dns.com.        | 1/2 Hour        |
+
 
 ## To-Do
 
@@ -225,5 +240,7 @@ x = completed
 | fix redirect     | --          |
 | favicon     | x          |
 | browser tab description     | x          |
-
+| https://docs.xft.finance/ DNS record     | x          |
+| Add Vercel docs domain      | x          |
+| x ledger product page replit     | --          |
 

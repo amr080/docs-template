@@ -89,3 +89,20 @@ foreach ($folder in $folders) {
         Write-Host "$folder does not exist."
     }
 }
+
+
+## Replace 'centrifuge' with 'xft' in files
+
+Get-ChildItem -Path ".." -Recurse -File | ForEach-Object {
+    (Get-Content $_.FullName) | ForEach-Object {
+        $_ -replace 'centrifuge', 'xft' `
+           -replace 'logo-centrifuge', 'logo-xft' `
+           -replace 'tinlake', 'xft'
+    } | Set-Content $_.FullName
+}
+
+## Search for 'icons/' in specific directories
+
+$dirs = "C:\Users\alexa\Desktop\Startup\documentation\src", "C:\Users\alexa\Desktop\Startup\documentation\static"; $pattern = "*.mjs", "*.json"; $searchTerm = "icons/"; $files = Get-ChildItem -Path $dirs -Recurse -Include $pattern -File | Where-Object { $_.FullName -notmatch "\\node_modules\\" }; $total = $files.Count; $count = 0; foreach ($file in $files) { $count++; Write-Progress -Activity "Searching files" -Status "$count out of $total" -PercentComplete (($count / $total) * 100); Select-String -Path $file.FullName -Pattern $searchTerm } 
+
+Get-ChildItem -Path "C:\Users\alexa\Desktop\Startup\documentation" -Recurse -Include "*.mjs", "*.json" | Select-String -Pattern "icons/"
