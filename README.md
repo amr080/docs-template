@@ -63,7 +63,8 @@ $$
 
 # XFT 
 Updated readme items. <br>
-cd C:\Users\alexa\Desktop\Startup\documentation
+https://github.com/amr080/docs-template.git<br>
+
 
 ## Brand Assets
 
@@ -219,9 +220,9 @@ done
 4. Development cmd: 
 5. Root directory: 
 6. Node.js Version: 22.x
-7. URL: https://docs.xft.finance/
-8. Production branch: xft-v4
-9. Redirect base: v0-documentation-xqcxxqlt66o.vercel.app
+7. Production branch: xft-v4
+8. URL: https://docs.xft.finance/
+9. Redirect base: https://v0-documentation-xqcxxqlt66o.vercel.app/
 10. Redirect path: /getting-started/introduction/welcome/
 
 <br>
@@ -230,11 +231,24 @@ done
 [Domain settings](https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o/settings/domains)<br>
 [Connected Git Repository](https://github.com/amr080/docs-template)
 
+### Netlify
+
+1. Framework preset: Gatsby.js
+2. Output directory:
+3. Install cmd: 
+4. Development cmd: 
+5. Root directory: 
+
+
+
+
 ### DNS
 
 | Type | Name                | Value | TTL |
 |-------------|----------------------------|-------------|-------------|
 | CNAME     | docs        | cname.vercel-dns.com.        | 1/2 Hour        |
+
+
 
 
 ## To-Do
