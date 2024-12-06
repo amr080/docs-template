@@ -1,24 +1,26 @@
-# Centrifuge Documentation
+# XFT Documentation
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7118d58-bd34-4f3d-97bd-00b8dc1ad2bd/deploy-status)](https://app.netlify.com/sites/centrifuge-documentation/deploys)
 
 ## About
 
-Centrifuge is an open, decentralized operating system that provides a method to create, exchange, and use the data used in the financial supply chain. It creates transparent and shareable relationships between interacting companies.
+XFT develops blockchain-native investment products, liquidity provisions, and payment rails for the next finance frontier.
 
-This project documents the procedure to set up a Centrifuge Node. For the step-by-step procedure, see [Docs](https://developer.centrifuge.io/).
+XFT is an open, decentralized operating system that provides a method to create, exchange, and use the data used in the financial supply chain. It creates transparent and shareable relationships between interacting companies.
 
-For information on the Centrifuge code, see our other repos.
+This project documents the procedure to set up a XFT Node. For the step-by-step procedure, see [Docs](https://x-financial-technologies.replit.app/docs/hub).
 
-To become a part of the Centrifuge community, read the [Code of Conduct](https://developer.centrifuge.io/cent-node/further-reading/contributing/) and join [Discord](https://centrifuge.io/discord/).
+For information on the XFT code, see our other repos.
+
+To become a part of the XFT community, read the [Code of Conduct](#) and join [Discord](#).
 
 ## Contributing
 
-### _Please_, feel free to make any contributions you think will make Centrifuge Documentation better.
+### _Please_, feel free to make any contributions you think will make XFT Documentation better.
 
 **Submit all pull requests to the develop branch**
 
-The develop branch is continuously deployed to a preview site. [View dev site](http://dev.docs.cntrfg.com/). You can submit a pull request to the repository to get a deploy preview built.
+The develop branch is continuously deployed to a preview site. [View dev site](#). You can submit a pull request to the repository to get a deploy preview built.
 
 ## Development
 
