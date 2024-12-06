@@ -94,7 +94,8 @@ Updated readme items.
 ## Project
 
 [Github](https://github.com/amr080/docs-template)<br>
-[Google Docs](https://docs.google.com/document/d/1sSnaxfrKAFVLvP2u78ANVq4DRnUyKTvByq3y6SJ4kf4/edit?tab=t.0)
+[Google Docs](https://docs.google.com/document/d/1sSnaxfrKAFVLvP2u78ANVq4DRnUyKTvByq3y6SJ4kf4/edit?tab=t.0)<br>
+[Monorepo](https://github.com/X-Financial-Technologies/monorepo)
 
 
 | Name | Description                | Date       |
