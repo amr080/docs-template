@@ -137,6 +137,7 @@ done
 30. rm -Recurse -Force .\.cache, .\public, .\node_modules
 31. Get-ChildItem -Path "C:\Users\alexa\Desktop\Startup\documentation" -Recurse -Include "*.mjs", "*.json" | Select-String -Pattern "icons/"
 32. $dirs = "C:\Users\alexa\Desktop\Startup\documentation\src", "C:\Users\alexa\Desktop\Startup\documentation\static"; $pattern = "*.mjs", "*.json"; $searchTerm = "icons/"; $files = Get-ChildItem -Path $dirs -Recurse -Include $pattern -File | Where-Object { $_.FullName -notmatch "\\node_modules\\" }; $total = $files.Count; $count = 0; foreach ($file in $files) { $count++; Write-Progress -Activity "Searching files" -Status "$count out of $total" -PercentComplete (($count / $total) * 100); Select-String -Path $file.FullName -Pattern $searchTerm }
+33. Remove-Item -Recurse -Force -Path .\.cache, .\public, .\node_modules
 
 
 ## Development Server (codespaces)
@@ -203,7 +204,7 @@ done
     - Swagger API
 
 ## Production
-1. rm -Recurse -Force ..cache, .\public, .\node_modules
+1. rm -Recurse -Force .cache, .\public, .\node_modules
 2. 
 
 ## To-Do
@@ -223,6 +224,6 @@ x = completed
 | add user pages     | --          |
 | fix redirect     | --          |
 | favicon     | x          |
-| browser tab description     | --          |
+| browser tab description     | x          |
 
 

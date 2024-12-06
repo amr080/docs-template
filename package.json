@@ -72,11 +72,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/centrifuge/developer.centrifuge.io.git"
+    "url": "git+https://github.com/amr080/docs-template.git"
   },
   "bugs": {
-    "url": "https://github.com/centrifuge/developer.centrifuge.io/issues"
+    "url": "https://github.com/amr080/docs-template/issues"
   },
-  "homepage": "https://github.com/centrifuge/developer.centrifuge.io#readme",
+  "homepage": "https://github.com/amr080/docs-template#readme",
   "packageManager": "yarn@4.1.1"
 }
