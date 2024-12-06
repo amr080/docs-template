@@ -9,10 +9,10 @@ const siteUrl = process.env.URL || "http://localhost:8000";
 
 export default {
   siteMetadata: {
-    title: `Centrifuge Documentation`,
+    title: `XFT Documentation`,
     siteUrl,
-    description: `Learn about Centrifuge`,
-    author: `@centrifuge`,
+    description: `Learn about XFT`,
+    author: `@xft`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

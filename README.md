@@ -62,7 +62,29 @@ $$
 ```
 
 # XFT 
-Updated readme items. 
+Updated readme items. <br>
+cd C:\Users\alexa\Desktop\Startup\documentation
+
+## Brand Assets
+
+1. logo-xft-full.svg
+    -   Size: 500 x 500
+    -   Aspect Ratio: 1:1
+
+2. logo-centrifuge-full.svg
+    - Dimensions: 108 x 32
+    - Aspect Ratio: 27:8
+
+3. centrifuge-logo.png
+    - transparent
+
+## Directory
+
+| File | Description                | Date       |
+|-------------|----------------------------|------------|
+| gatsby-config.mjs     | icon + source paths        | 2024-12-05 |
+| archive      | old docs     | 2024-12-05 |
+
 
 ## Commands
 1. tree /F | sls -NotMatch '\.yarn|\.cache|node_modules|public'
@@ -112,6 +134,9 @@ done
 }
 28. git checkout -b xft-v2
 29. [USE WITH CAUTION] >>> rm -Recurse -Force .\*
+30. rm -Recurse -Force .\.cache, .\public, .\node_modules
+31. Get-ChildItem -Path "C:\Users\alexa\Desktop\Startup\documentation" -Recurse -Include "*.mjs", "*.json" | Select-String -Pattern "icons/"
+32. $dirs = "C:\Users\alexa\Desktop\Startup\documentation\src", "C:\Users\alexa\Desktop\Startup\documentation\static"; $pattern = "*.mjs", "*.json"; $searchTerm = "icons/"; $files = Get-ChildItem -Path $dirs -Recurse -Include $pattern -File | Where-Object { $_.FullName -notmatch "\\node_modules\\" }; $total = $files.Count; $count = 0; foreach ($file in $files) { $count++; Write-Progress -Activity "Searching files" -Status "$count out of $total" -PercentComplete (($count / $total) * 100); Select-String -Path $file.FullName -Pattern $searchTerm }
 
 
 ## Development Server (codespaces)
@@ -139,15 +164,15 @@ done
 [Github](https://github.com/amr080/docs-template)<br>
 [Google Docs](https://docs.google.com/document/d/1sSnaxfrKAFVLvP2u78ANVq4DRnUyKTvByq3y6SJ4kf4/edit?tab=t.0)<br>
 [Monorepo](https://github.com/X-Financial-Technologies/monorepo)<br>
-[ChatGPT Backend](https://chatgpt.com/backend-api/share/675261dc-b0b4-8003-bc96-da98b7c56c0f)
-
-
+[ChatGPT Backend](https://chatgpt.com/backend-api/share/675261dc-b0b4-8003-bc96-da98b7c56c0f)<br>
+[Scripts](./SCRIPTS.md)
 
 | Name | Description                | Date       |
 |-------------|----------------------------|------------|
 | develop     | centrifuge template        | 2024-12-05 |
 | xft-v1      | initial xft conversion     | 2024-12-05 |
 | xft-v2      | local environment          | 2024-12-05 |
+| xft-v3      | functional deploy          | 2024-12-05 |
 
 ## v0 Dependencies
 1. https://v0.dev/chat/projects/xqCXxQlT66O
@@ -177,21 +202,9 @@ done
 5. http://localhost:8082
     - Swagger API
 
-## Brand Assets
-
-1. logo-xft-full.svg
-    -   Size: 500 x 500
-    -   Aspect Ratio: 1:1
-
-2. logo-centrifuge-full.svg
-    - Dimensions: 108 x 32
-    - Aspect Ratio: 27:8
-
-3. centrifuge-logo.png
-    - transparent
-
-
-
+## Production
+1. rm -Recurse -Force ..cache, .\public, .\node_modules
+2. 
 
 ## To-Do
 
@@ -205,4 +218,11 @@ x = completed
 | new branch xft-v2      | x          |
 | rename imgs      | x          |
 | rename imgs code reference      | x          |
+| add user pages     | --          |
+| add dev pages     | --          |
+| add user pages     | --          |
+| fix redirect     | --          |
+| favicon     | x          |
+| browser tab description     | --          |
+
 

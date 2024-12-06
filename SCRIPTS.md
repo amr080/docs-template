@@ -1,4 +1,4 @@
-## Scripts
+# Scripts
 
 ### Global Naming Logic
 
@@ -25,7 +25,7 @@ Target folders
 
 $targetDirectories = @("src", "docs", "plugins")
 
-# Define the mapping of old file names to new file names
+### Define the mapping of old file names to new file names
 $fileRenames = @{
     "centrifuge-documentation-wordmark.svg" = "xft-documentation-wordmark.svg"
     "centrifuge-logo.png" = "xft-logo.png"
@@ -36,7 +36,7 @@ $fileRenames = @{
 
 $targetDirectories = @("src", "docs", "plugins")
 
-# Define the mapping of old file names to new file names
+### Define the mapping of old file names to new file names
 $fileRenames = @{
     "centrifuge-documentation-wordmark.svg" = "xft-documentation-wordmark.svg"
     "centrifuge-logo.png" = "xft-logo.png"
@@ -72,3 +72,20 @@ Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\component
 Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\Layout\index.js
 Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\Nav\index.js
 Updated references in C:\Users\alexa\Desktop\Startup\documentation\src\components\SideNav\index.js
+
+
+
+
+## Clear
+
+$folders = @(".\.cache", ".\public", ".\node_modules")
+
+foreach ($folder in $folders) {
+    if (Test-Path $folder) {
+        Write-Host "Deleting $folder..."
+        Remove-Item -Recurse -Force $folder
+        Write-Host "$folder deleted successfully."
+    } else {
+        Write-Host "$folder does not exist."
+    }
+}

@@ -2,7 +2,7 @@
   "name": "developer.xft.io",
   "description": "XFT User & Technical Documentation",
   "version": "0.1.0",
-  "author": "@centrifuge",
+  "author": "@xft",
   "dependencies": {
     "@babel/eslint-parser": "^7.24.1",
     "@babel/preset-env": "^7.24.4",
