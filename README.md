@@ -208,11 +208,12 @@ done
 8. corepack yarn develop
 
 ### Vercel
+Branch: xft-v3<br>
 Framework: Gatsby.js<br>
 Node.js Version: 22.x<br>
 URL: https://docs.xft.finance/<br>
-Branch: xft-v3<br>
-Redirect: 
+Redirect base: v0-documentation-xqcxxqlt66o.vercel.app<br>
+Redirect path: /getting-started/introduction/welcome/<br>
 [Domain settings](https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o/settings/domains)<br>
 
 ### DNS
