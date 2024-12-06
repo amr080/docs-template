@@ -9101,9 +9101,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"developer.centrifuge.io@workspace:.":
+"developer.xft.io@workspace:.":
   version: 0.0.0-use.local
-  resolution: "developer.centrifuge.io@workspace:."
+  resolution: "developer.xft.io@workspace:."
   dependencies:
     "@babel/eslint-parser": "npm:^7.24.1"
     "@babel/preset-env": "npm:^7.24.4"

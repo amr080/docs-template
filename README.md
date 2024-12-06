@@ -59,6 +59,11 @@ D = P \times (1 + \frac{r}{n})^{nt}
 $$
 ```
 
-## License
+## Development Deployment
+1. npm uninstall -g yarn
+2. corepack enable
+3. corepack prepare yarn@4.1.1 --activate
+4. corepack yarn --version
+5. corepack yarn install
+6. corepack yarn develop
 
-Centrifuge Documentation is licensed under the [Creative Commons Attribution-ShareAlike 2.0 License](https://creativecommons.org/licenses/by-sa/2.0/deed.en_GB)
