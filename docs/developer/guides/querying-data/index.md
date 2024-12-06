@@ -18,7 +18,7 @@ You can follow the official GraphQL guide [here](https://graphql.org/learn/) to 
 
 | **Network** | **GraphQL Endpoint**                                         |
 | ----------- | ------------------------------------------------------------ |
-| Centrifuge  | https://api.subquery.network/sq/centrifuge/pools             |
+| XFT  | https://api.subquery.network/sq/centrifuge/pools             |
 | Dev         | https://api.subquery.network/sq/centrifuge/pools-development |
 
 ## Sample Queries
@@ -38,7 +38,7 @@ Here some important hints and common pitfalls that can save you some time when w
 - Entities ids are not necessarily the same as on chain ids
   Therefore, when querying an entity, always refer to the GraphQL data model to verify how the id is composed.
 
-### Get net portfolio valuation and active loans for all Centrifuge Pools
+### Get net portfolio valuation and active loans for all XFT Pools
 
 ```graphql
 {

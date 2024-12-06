@@ -11,9 +11,9 @@ redirect_from:
 
 # Private Data Layer
 
-To create an on-chain representation of the off-chain, real world asset, each borrower mints an NFT (Non Fungible Token). This NFT contains the most important information required for pricing, financing and valuation and can be locked into pools on the Centrifuge protocol as representations of the collateral used for the financing. However, any on-chain information attached to these NFTs will be public by default. With real world use cases, investors often require access to extensive information about assets, but the issuer does not normally make this public information.
+To create an on-chain representation of the off-chain, real world asset, each borrower mints an NFT (Non Fungible Token). This NFT contains the most important information required for pricing, financing and valuation and can be locked into pools on the XFT protocol as representations of the collateral used for the financing. However, any on-chain information attached to these NFTs will be public by default. With real world use cases, investors often require access to extensive information about assets, but the issuer does not normally make this public information.
 
-Centrifuge's Private Data Layer solves this. It allows issuers and investors to access additional asset data securely and privately. This asset data is hashed and the hash anchored on-chain and added to the NFTs metadata to create a verifiable link to the NFT without making the data publicly available.
+XFT's Private Data Layer solves this. It allows issuers and investors to access additional asset data securely and privately. This asset data is hashed and the hash anchored on-chain and added to the NFTs metadata to create a verifiable link to the NFT without making the data publicly available.
 
 ## The peer-to-peer network
 

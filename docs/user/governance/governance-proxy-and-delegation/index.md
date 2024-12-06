@@ -28,7 +28,7 @@ The first step is to [create a hot wallet](https://docs.centrifuge.io/user/using
 
 If your tokens are in a cold wallet (e.g. Parity Signer), you need to import it to the Polkadot.js portal first, using the browser extension. You can find simple instructions on how to do that for Parity Signer [here](https://support.polkadot.network/support/solutions/articles/65000182010-how-to-add-a-parity-signer-account-on-polkadot-js-ui) (use the section _How to add your account through the Polkadot extension_). This way you make your cold wallet hot temporarily while you set up your Governance proxy - make sure to remove it again if you want it to remain cold.
 
-Make sure they are both visible on _Centrifuge_ (not Centrifuge Chain which is the old standalone chain) in the Polkadot.js browser extension.
+Make sure they are both visible on _XFT_ (not XFT Chain which is the old standalone chain) in the Polkadot.js browser extension.
 
 ![](./images/VisibilityJS.png)
 

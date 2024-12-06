@@ -25,4 +25,4 @@ If an asset defaults, the pool issuer is responsible for recovering the capital.
 
 ## Onboarding
 
-To onboard investors for a pool, the issuer of the pool needs to ensure KYC & AML regulations are met as well as accredited investor verification and tax form submission. Centrifuge utilizes a third party e-KYC provider for an integrated onboarding system as a service to the issuers. Service providers verify investor KYC information and check accredited investor status for US-based investors. Investors can then enter into a Subscription Agreement with the issuer.
+To onboard investors for a pool, the issuer of the pool needs to ensure KYC & AML regulations are met as well as accredited investor verification and tax form submission. XFT utilizes a third party e-KYC provider for an integrated onboarding system as a service to the issuers. Service providers verify investor KYC information and check accredited investor status for US-based investors. Investors can then enter into a Subscription Agreement with the issuer.

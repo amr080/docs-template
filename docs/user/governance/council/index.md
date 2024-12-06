@@ -1,7 +1,7 @@
 ---
 id: council
 order: 5
-title: Centrifuge Council
+title: XFT Council
 contributors: <Orhan Klardashti:klardashti@gmail.com>
 category: subpage
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /use/council/
 ---
 
-# Centrifuge Council
+# XFT Council
 
-The Centrifuge council currently consists of 9 councilors (this number can be changed by governance) who are elected by the CFG token holders. The council serves to represent the interest of all Centrifuge stakeholders, be they actively participating token holders or not. Some of the tasks of the council are to:
+The XFT council currently consists of 9 councilors (this number can be changed by governance) who are elected by the CFG token holders. The council serves to represent the interest of all XFT stakeholders, be they actively participating token holders or not. Some of the tasks of the council are to:
 
 - Propose referenda to the benefit of the network
 - Veto proposals that are harmful to the network
@@ -19,11 +19,11 @@ The Centrifuge council currently consists of 9 councilors (this number can be ch
 
 Any CFG token holder can both submit their candidacy to the council and vote on councilors.
 
-The Centrifuge council have rolling elections, which means that every 7 days the votes are counted, and the candidates with the highest amount of votes (in terms of CFG) from _candidates_, _runners up_ and _members_ will be given a seat in the council.
+The XFT council have rolling elections, which means that every 7 days the votes are counted, and the candidates with the highest amount of votes (in terms of CFG) from _candidates_, _runners up_ and _members_ will be given a seat in the council.
 
 ## How to submit a candidacy to the council
 
-Before you can submit your candidacy to the Centrifuge council, you need to create an **on-chain identity** for the account you will use for your candidacy. You do so by going to [Accounts](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ffullnode.parachain.centrifuge.io#/accounts) in the Polkadot.js web app, then click on the three dots next to the account you want create an on-chain identity for, and select _Set on-chain identity_.
+Before you can submit your candidacy to the XFT council, you need to create an **on-chain identity** for the account you will use for your candidacy. You do so by going to [Accounts](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ffullnode.parachain.centrifuge.io#/accounts) in the Polkadot.js web app, then click on the three dots next to the account you want create an on-chain identity for, and select _Set on-chain identity_.
 
 ![](./images/SetIdentity.png)
 

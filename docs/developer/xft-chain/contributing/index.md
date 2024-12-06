@@ -5,9 +5,9 @@ title: Contributing
 contributors: <William Freudenberger:william@centrifuge.io>, <Cosmin Damian:cosmin@centrifuge.io>
 category: subpage
 ---
-# Contributing to Centrifuge Chain
+# Contributing to XFT Chain
 
-The development of the Centrifuge Chain benefits greatly from the diverse perspectives and skills of our external contributors. Whether you are fixing a bug, proposing a new feature, or enhancing the existing documentation, your efforts are highly valued. Join us in further developing this open-source project by sharing your unique contributions.
+The development of the XFT Chain benefits greatly from the diverse perspectives and skills of our external contributors. Whether you are fixing a bug, proposing a new feature, or enhancing the existing documentation, your efforts are highly valued. Join us in further developing this open-source project by sharing your unique contributions.
 
 A practical entry point for contributors is to address issues tagged as [Q0-trivial or Q1-easy](https://github.com/centrifuge/centrifuge-chain/issues?q=is%3Aopen+is%3Aissue+label%3AQ1-easy%2CQ0-trivial+). Making corrections to typos in our Rustdocs or inline comments is equally important and greatly appreciated.
 
@@ -31,11 +31,11 @@ Build Wasm and native code:
 cargo build --release
 ```
 
-Great! You have already compiled the Centrifuge Chain!
+Great! You have already compiled the XFT Chain!
 
 ## Tests
 
-There are two kinds of tests, one related to how the *Centrifuge Chain* works itself
+There are two kinds of tests, one related to how the *XFT Chain* works itself
 and another one to verify how it works in a more real environment as a parachain.
 
 ### Chain tests
@@ -48,7 +48,7 @@ cargo test --workspace --release --features runtime-benchmarks,try-runtime
 
 ### Environment tests
 
-You can deploy a relay chain and connect a Centrifuge Chain node as parachain
+You can deploy a relay chain and connect a XFT Chain node as parachain
 to it to verify how it behaves in the entire environment (end-to-end).
 
 0. Prerequisites. You must install these tools before:
@@ -65,7 +65,7 @@ It contains two [validator](https://wiki.polkadot.network/docs/learn-validator) 
 
     *Note: You can stop the relay chain using `./scripts/init.sh stop-relay-chain`*
 
-2. Start a *Centrifuge Chain* as [parachain](https://wiki.polkadot.network/docs/learn-parachains).
+2. Start a *XFT Chain* as [parachain](https://wiki.polkadot.network/docs/learn-parachains).
 It runs a [collator](https://wiki.polkadot.network/docs/learn-collator) node:
     ```bash
     ./scripts/init.sh start-parachain
@@ -163,25 +163,25 @@ parity projects such as the Polkadot SDK, as well as for other third-party proje
 such as the `ORML` pallets, `xcm-simulator`, etc.
 
 Therefore, updating this repository to a new version of Polkadot means updating all of these dependencies
-(internal and external to Centrifuge ) and have them all aligned on the same version of Polkadot.
+(internal and external to XFT ) and have them all aligned on the same version of Polkadot.
 
 _Note: When we say "new version of Polkadot", we implicitly mean "Polkadot SDK, Frontier, ORML"._
 
 The high level flow to upgrade to a newer version of Polkadot is:
 
-1. Update all the Centrifuge-Chain dependencies to a revision that also points to the last version of Polkadot
+1. Update all the XFT-Chain dependencies to a revision that also points to the last version of Polkadot
 2. Fix all the breaking changes introduced by the latest versions
 
 ### Update dependencies
 
-Since the Centrifuge Chain repository uses workspace inheritance, dependency revisions only need to be configured in the root `Cargo.toml`.
+Since the XFT Chain repository uses workspace inheritance, dependency revisions only need to be configured in the root `Cargo.toml`.
 
 1. **Update the `patch` rules in `Cargo.toml`**
 
     The cargo patch rules ensure that we use specific revision for the Polkadot SDK, Frontier and others, by
     pointing to a specific git revision or branch. For each of the projects covered by these rules, look up whether there exists a git branch for the specific Polkadot SDK version to which you want to upgrade.
 
-2. **Repeat step 1. for the other Centrifuge repositories that the Centrifuge Chain depends on**
+2. **Repeat step 1. for the other XFT repositories that the XFT Chain depends on**
 
     For each of those repositories, create a new branch out of the latest `polkadot-vX.Y.Z` and repeat step 1 for each of them.
 
@@ -192,7 +192,7 @@ Since the Centrifuge Chain repository uses workspace inheritance, dependency rev
      - NOTE: Only required in case of breaking client changes (i.e. deprecations or new host functions)
 
 
-3. **Back to Centrifuge-chain, update the crates in the projects updated in step 2.**
+3. **Back to XFT-chain, update the crates in the projects updated in step 2.**
 
     For example, if before we have a dependency on `fudge` at branch `polkadot-v1.1.1`, update it to `polkadot-v1.7.0`.
 

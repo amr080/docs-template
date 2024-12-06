@@ -1,27 +1,27 @@
 ---
 id: bridge
 order: 2
-title: Centrifuge - Ethereum Bridge
+title: XFT - Ethereum Bridge
 category: subpage
 redirect_from:
   - /build/bridge
   - /build/bridge/
 ---
 
-# Centrifuge-Ethereum Bridge
+# XFT-Ethereum Bridge
 
 The CFG token can be bridged 1:1 to Ethereum. [Read the guide here for instructions on how to bridge CFG](/user/cfg-bridge).
 
 ## Token Supply
 
-The bridge supply can be audited by comparing the number of tokens stored on the Centrifuge Chain bridge account with the ERC20 token supply of wCFG on Ethereum.
+The bridge supply can be audited by comparing the number of tokens stored on the XFT Chain bridge account with the ERC20 token supply of wCFG on Ethereum.
 
-- Centrifuge Chain (CFG): `4dpEcgqFp8UL6eA3b7hhtdj7qftHRZE7g1uadHyuw1WSNSgH`
+- XFT Chain (CFG): `4dpEcgqFp8UL6eA3b7hhtdj7qftHRZE7g1uadHyuw1WSNSgH`
 - Ethereum (wCFG): `0xc221b7e65ffc80de234bbb6667abdd46593d34f0`
 
 ## Relayer Threshold
 
-You can submit an RPC call to a full node and query `chainBridge.relayerThreshold`. This will give you the number of confirmations needed on the Centrifuge Chain to trigger a transfer.
+You can submit an RPC call to a full node and query `chainBridge.relayerThreshold`. This will give you the number of confirmations needed on the XFT Chain to trigger a transfer.
 
 On Ethereum, you can query the Chainbridge public method `_relayerThreshold()(uint8)`:
 

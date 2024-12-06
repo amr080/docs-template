@@ -9,16 +9,16 @@ category: subpage
 
 [Git Source](https://github.com/centrifuge/liquidity-pools/blob/d3ac058a6ddd3342f78bf09fd1d37058007c6644/src/LiquidityPool.sol)
 
-Liquidity Pool implementation for Centrifuge pools
+Liquidity Pool implementation for XFT pools
 following the ERC-7540 Asynchronous Tokenized Vault standard
 
-_Each Liquidity Pool is a tokenized vault issuing shares of Centrifuge tranches as restricted ERC-20 tokens against currency deposits based on the current share price. ERC-7540 is an extension of the ERC-4626 standard by 'requestDeposit' & 'requestRedeem' methods, where deposit and redeem orders are submitted to the pools to be included in the execution of the following epoch. After execution users can use the deposit, mint, redeem and withdraw functions to get their shares and/or assets from the pools._
+_Each Liquidity Pool is a tokenized vault issuing shares of XFT tranches as restricted ERC-20 tokens against currency deposits based on the current share price. ERC-7540 is an extension of the ERC-4626 standard by 'requestDeposit' & 'requestRedeem' methods, where deposit and redeem orders are submitted to the pools to be included in the execution of the following epoch. After execution users can use the deposit, mint, redeem and withdraw functions to get their shares and/or assets from the pools._
 
 ## State Variables
 
 ### poolId
 
-Identifier of the Centrifuge pool
+Identifier of the XFT pool
 
 ```solidity
 uint64 public immutable poolId;
@@ -26,7 +26,7 @@ uint64 public immutable poolId;
 
 ### trancheId
 
-Identifier of the tranche of the Centrifuge pool
+Identifier of the tranche of the XFT pool
 
 ```solidity
 bytes16 public immutable trancheId;
@@ -35,7 +35,7 @@ bytes16 public immutable trancheId;
 ### asset
 
 The investment currency (asset) for this Liquidity Pool.
-Each tranche of a Centrifuge pool can have multiple Liquidity Pools.
+Each tranche of a XFT pool can have multiple Liquidity Pools.
 One Liquidity Pool for each supported investment currency.
 Thus tranche shares can be linked to multiple Liquidity Pools with different currencies.
 
@@ -70,7 +70,7 @@ ManagerLike public manager;
 
 ### REQUEST_ID
 
-_Requests for Centrifuge pool are non-transferable and all have ID = 0_
+_Requests for XFT pool are non-transferable and all have ID = 0_
 
 ```solidity
 uint256 constant REQUEST_ID = 0;
@@ -248,7 +248,7 @@ function totalAssets() external view returns (uint256);
 
 ### convertToShares
 
-The calculation is based on the token price from the most recent epoch retrieved from Centrifuge.
+The calculation is based on the token price from the most recent epoch retrieved from XFT.
 The actual conversion MAY change between order submission and execution.
 
 _Returns the amount of shares that the Vault would exchange for the amount of assets provided, in an ideal scenario where all the conditions are met._
@@ -267,7 +267,7 @@ function convertToShares(uint256 assets) public view returns (uint256 shares);
 
 ### convertToAssets
 
-The calculation is based on the token price from the most recent epoch retrieved from Centrifuge.
+The calculation is based on the token price from the most recent epoch retrieved from XFT.
 The actual conversion MAY change between order submission and execution.
 
 _Returns the amount of assets that the Vault would exchange for the amount of shares provided, in an ideal scenario where all the conditions are met._

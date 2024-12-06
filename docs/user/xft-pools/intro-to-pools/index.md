@@ -15,37 +15,37 @@ redirect_from:
 
 # Introduction to Pools
 
-This page explores the core concepts and terminology of Centrifuge's pools.
+This page explores the core concepts and terminology of XFT's pools.
 
-## Centrifuge pool
+## XFT pool
 
-A Centrifuge pool is an onchain structure that brings together asset issuers and investors. With a Centrifuge pool, issuers can finance real-world assets, including but not limited to consumer finance, real estate, or U.S. treasuries onchain via the investment of crypto investors and DeFi protocols. They do this by tokenizing their financial assets into non-fungible tokens (NFTs) and using these NFTs as collateral in their Centrifuge pool.
+A XFT pool is an onchain structure that brings together asset issuers and investors. With a XFT pool, issuers can finance real-world assets, including but not limited to consumer finance, real estate, or U.S. treasuries onchain via the investment of crypto investors and DeFi protocols. They do this by tokenizing their financial assets into non-fungible tokens (NFTs) and using these NFTs as collateral in their XFT pool.
 
 ### Revolving pool
 
-Centrifuge pools are set up as "revolving pools". Revolving pools allow investors to lock investments and redemptions at any point in time. A decentralized solver mechanism matches investments and redemptions with the liquidity in the pool and ensures that certain risk metrics remain intact. This ensures that issuers have a constant source of liquidity while investors can flexibly invest and redeem.
+XFT pools are set up as "revolving pools". Revolving pools allow investors to lock investments and redemptions at any point in time. A decentralized solver mechanism matches investments and redemptions with the liquidity in the pool and ensures that certain risk metrics remain intact. This ensures that issuers have a constant source of liquidity while investors can flexibly invest and redeem.
 
-## Entities involved in Centrifuge pools
+## Entities involved in XFT pools
 
 ### Issuer
 
-The legal entity (a special purpose vehicle - "SPV") that "holds" the assets, draws down the financing from Centrifuge, issues tranche tokens in return for investments, and manages the pool.
+The legal entity (a special purpose vehicle - "SPV") that "holds" the assets, draws down the financing from XFT, issues tranche tokens in return for investments, and manages the pool.
 
 ### Asset originator
 
-The asset originator originates real-world assets and pledges these to the issuer in return for financing. For some pools, asset originators set up a dedicated SPV to act as their issuer. For other pools, an issuer can also have several different asset originators originating assets for a Centrifuge pool.
+The asset originator originates real-world assets and pledges these to the issuer in return for financing. For some pools, asset originators set up a dedicated SPV to act as their issuer. For other pools, an issuer can also have several different asset originators originating assets for a XFT pool.
 
 ### Investors
 
-Investors provide the liquidity that issuers use to finance assets and in return earn yield. For every Centrifuge pool, investors can invest in pool tranche tokens which represent their stake in that tranche. These tranches represent a tiered investment structure with different tranches common in traditional finance — see below.
+Investors provide the liquidity that issuers use to finance assets and in return earn yield. For every XFT pool, investors can invest in pool tranche tokens which represent their stake in that tranche. These tranches represent a tiered investment structure with different tranches common in traditional finance — see below.
 
 ## Tranche tokens
 
-### Centrifuge's tranches
+### XFT's tranches
 
 Investors usually have different risk preferences. Some investors feel comfortable with bearing higher risks if they expect higher returns. Many other investors are content with relatively stable returns knowing they are at less risk of losing part or all of their investment.
 
-This is why Centrifuge pools come with optionality of one to five tranches. The typical set up is a two tranche system: a senior token with a stable return and a more volatile junior token. The issuer sets the name of these tokens. Senior tokens offer a stable return protected against defaults by a junior buffer.
+This is why XFT pools come with optionality of one to five tranches. The typical set up is a two tranche system: a senior token with a stable return and a more volatile junior token. The issuer sets the name of these tokens. Senior tokens offer a stable return protected against defaults by a junior buffer.
 
 ### Senior token
 
@@ -59,45 +59,45 @@ Mezzanine token represent tranches stacked between senior and junior tranches. T
 
 The junior token’s returns are expected to be higher, yet more volatile as they absorb any potential default losses first. For this reason, the junior token tranche is typically not open to the public as the pools scale with experienced junior investors first. Typically you would contact the pool issuer directly to join the junior tranche.
 
-## Assets on Centrifuge
+## Assets on XFT
 
 ### Asset
 
-An asset in a Centrifuge pool is a real-world asset — like real estate or US treasuries — tokenized onchain. These assets typically have a stable value and/or payment stream so it can be used as collateral to borrow against. It is pledged to the legal issuer of the pool.
+An asset in a XFT pool is a real-world asset — like real estate or US treasuries — tokenized onchain. These assets typically have a stable value and/or payment stream so it can be used as collateral to borrow against. It is pledged to the legal issuer of the pool.
 
 ### NFT
 
-An NFT on Centrifuge is a tokenized representation of a real-world asset. Centrifuge NFTs can be locked into Centrifuge pools as collateral by the issuer to draw down financing.
+An NFT on XFT is a tokenized representation of a real-world asset. XFT NFTs can be locked into XFT pools as collateral by the issuer to draw down financing.
 
 ### Financing
 
-After locking an NFT as collateral in their Centrifuge pool, an issuer can draw down financing from Centrifuge up to the value of the NFT. Every financing accrues interest at the financing fee. To close the financing, the entire outstanding amount including accrued interest needs to be repaid. The issuer can only unlock the collateral NFT after full repayment.
+After locking an NFT as collateral in their XFT pool, an issuer can draw down financing from XFT up to the value of the NFT. Every financing accrues interest at the financing fee. To close the financing, the entire outstanding amount including accrued interest needs to be repaid. The issuer can only unlock the collateral NFT after full repayment.
 
 ### Asset value / NAV
 
-The NAV (Net Asset Value) reflects the present value of the outstanding portfolio of financings including the reserve (liquidity) of the pool. It is the sum of the present values of the risk-adjusted expected repayments of all outstanding financings. Valuation parameters are also provided by the document underlying the NFT, which is created and shared through Centrifuge's private offchain data layer.
+The NAV (Net Asset Value) reflects the present value of the outstanding portfolio of financings including the reserve (liquidity) of the pool. It is the sum of the present values of the risk-adjusted expected repayments of all outstanding financings. Valuation parameters are also provided by the document underlying the NFT, which is created and shared through XFT's private offchain data layer.
 
-The NAV ultimately determines the junior tranche value and thus the token price at which investors invest and redeem at every epoch. Centrifuge pools allow for different type of valuation methods. You can find more details about Centrifuge's valuation approach, including simplified examples [here](https://docs.centrifuge.io/user/centrifuge-pools/pool-valuation/).
+The NAV ultimately determines the junior tranche value and thus the token price at which investors invest and redeem at every epoch. XFT pools allow for different type of valuation methods. You can find more details about XFT's valuation approach, including simplified examples [here](https://docs.centrifuge.io/user/centrifuge-pools/pool-valuation/).
 
 ## Investments and redemptions
 
 ### Investments
 
-To invest in a Centrifuge pool, an investor submits an investment order in the pool denominated stablecoin. This order can be canceled at any time up until the transaction is executed at the end of an epoch at the current token price. After the execution of the transaction, investors can collect their tranche token.
+To invest in a XFT pool, an investor submits an investment order in the pool denominated stablecoin. This order can be canceled at any time up until the transaction is executed at the end of an epoch at the current token price. After the execution of the transaction, investors can collect their tranche token.
 
 Note that investment orders can also be partially executed. In this case, investors can collect their tranche token based on the partially executed amount. The remaining stablecoins in the order remain submitted for further execution until the order can be fulfilled or is canceled.
 
 ### Redemptions
 
-To redeem an investment from a pool on Centrifuge, an investor submits an order to redeem their tranche tokens. This order can be cancelled at any time up until the order is executed at the end of an epoch at the current token price. After the execution of the transaction, investors can collect their stablecoins back.
+To redeem an investment from a pool on XFT, an investor submits an order to redeem their tranche tokens. This order can be cancelled at any time up until the order is executed at the end of an epoch at the current token price. After the execution of the transaction, investors can collect their stablecoins back.
 
 As with investment orders, redemption orders can also be partially executed. In this case, investors can collect their stablecoins based on the partially executed amount. The remaining tranche tokens remain in the pool, awaiting further redemption in subsequent epochs until the order is fulfilled or is cancelled.
 
 ### Epochs and order execution
 
-For Centrifuge's revolving pools, all investment and redemption are locked over a defined period of time ("Epoch") and automatically executed at the end of this period following predetermined priorities and risk metrics. Investors can supply more liquidity at any point during an epoch; they can also adjust a redemption order during the epoch.
+For XFT's revolving pools, all investment and redemption are locked over a defined period of time ("Epoch") and automatically executed at the end of this period following predetermined priorities and risk metrics. Investors can supply more liquidity at any point during an epoch; they can also adjust a redemption order during the epoch.
 
-At the end of the epoch, all locked orders will be processed and executed at the current token prices considering the current and maximum liquidity of the pool and the current subordination ratios. If all orders cannot be executed, Centrifuge's solver mechanism will be initiated to find the optimal solution while adhering to risk metrics and tranche token seniority.
+At the end of the epoch, all locked orders will be processed and executed at the current token prices considering the current and maximum liquidity of the pool and the current subordination ratios. If all orders cannot be executed, XFT's solver mechanism will be initiated to find the optimal solution while adhering to risk metrics and tranche token seniority.
 
 ## Pool Liquidity
 
@@ -107,7 +107,7 @@ The reserve is the current liquidity in the pool that is not deployed to finance
 
 ### Cash drag
 
-Centrifuge's financing fees are applied on financed assets only and excess liquidity in the pool’s reserve does not earn interest. Therefore, it's important to note on how issuers manage their liquidity. High liquidity or "cash" holding decreases the pool's effective yields.
+XFT's financing fees are applied on financed assets only and excess liquidity in the pool’s reserve does not earn interest. Therefore, it's important to note on how issuers manage their liquidity. High liquidity or "cash" holding decreases the pool's effective yields.
 
 ### Max reserve amount
 

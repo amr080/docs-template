@@ -33,13 +33,13 @@ Let's assume a pool of `$100` yields a total return on its portfolio of 10% or `
 
 ## Scalable tranche configuration
 
-Centrifuge allows for flexible configuration of multiple tranches within a pool. Upon creation, a pool can be set up with one to five tranches. Each tranche above the junior tranche carries a defined fixed return (expressed as %APR on deployed assets), a position in the waterfall, and a subordination ratio. The junior tranche, by definition, sits at the bottom of the waterfall without a subordination ratio or predefined fixed returns.
+XFT allows for flexible configuration of multiple tranches within a pool. Upon creation, a pool can be set up with one to five tranches. Each tranche above the junior tranche carries a defined fixed return (expressed as %APR on deployed assets), a position in the waterfall, and a subordination ratio. The junior tranche, by definition, sits at the bottom of the waterfall without a subordination ratio or predefined fixed returns.
 
 ## Cash drag across tranches
 
 A pool only accrues interest on the deployed capital or financed assets, while liquidity in the reserve does not earn any interest. This situation can result in what is known as "cash drag."
 For example, consider a pool of `$100` with a portfolio of assets worth `$80` and a reserve of `$20`. If the portfolio of assets yields 10%, the pool will generate a total return of 8% because the 20% cash portion of undeployed capital reduces the overall return.
-In Centrifuge's revolving pools, the cash drag is equally distributed across the tranches. So, if the above pool has three tranches yielding fixed returns of 2%, 3%, and 15%, respectively, the effective returns would be 20% lower, resulting in 1.8%, 2.4%, and 12.0%.
+In XFT's revolving pools, the cash drag is equally distributed across the tranches. So, if the above pool has three tranches yielding fixed returns of 2%, 3%, and 15%, respectively, the effective returns would be 20% lower, resulting in 1.8%, 2.4%, and 12.0%.
 
 ## Breach of subordination ratios
 

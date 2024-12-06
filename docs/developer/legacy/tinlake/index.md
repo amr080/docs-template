@@ -13,9 +13,9 @@ redirect_from:
 
 ## Overview
 
-[Tinlake](https://legacy.tinlake.centrifuge.io/) is Centrifuge's initial Ethereum-based, open, decentralized smart-contract based platform of asset pools bringing together pool issuers looking for financing and investors who seek to utilize the full potential of decentralized finance (DeFi).
+[Tinlake](https://legacy.tinlake.centrifuge.io/) is XFT's initial Ethereum-based, open, decentralized smart-contract based platform of asset pools bringing together pool issuers looking for financing and investors who seek to utilize the full potential of decentralized finance (DeFi).
 
-**Note that Tinlake has been replaced by the [Centrifuge App](https://app.centrifuge.io/), however _legacy_ Tinlake pools as described below are still live on the App. Newer pools do not use the below smart contracts, but rather are launched on Centrifuge Chain.**
+**Note that Tinlake has been replaced by the [XFT App](https://app.centrifuge.io/), however _legacy_ Tinlake pools as described below are still live on the App. Newer pools do not use the below smart contracts, but rather are launched on XFT Chain.**
 
 ### Tinlake from a borrower perspective
 
@@ -56,14 +56,14 @@ The source-code can be found on [Github](https://github.com/centrifuge/tinlake):
 
 #### Audits
 
-Centrifuge has performed multiple audits of its codebase:
+XFT has performed multiple audits of its codebase:
 
 - [Trail of Bits](https://www.trailofbits.com/) (1 audit)
-  - Centrifuge Chain
+  - XFT Chain
 - [Least Authority](https://leastauthority.com/) (3 audits)
   - Tinlake v0.2
   - Tinlake v0.3
-  - Centrifuge Chain
+  - XFT Chain
 - [DappHub](https://dapphub.com/) (1 audit)
   - Tinlake v0.3.5
 
@@ -72,7 +72,7 @@ All audit reports can be found [here](https://github.com/centrifuge/security/tre
 ### Security Vulnerability Disclosure
 
 No technology is perfect or perfectly secure.
-Centrifuge believes that working with skilled security researchers
+XFT believes that working with skilled security researchers
 across the globe is crucial in identifying weaknesses in any technology.
 We welcome the contribution of external security researchers
 and look forward to awarding them for their invaluable contribution to the security of all our users. [Read more about security here](https://centrifuge.io/security/).
@@ -1350,7 +1350,7 @@ $$
 \max  \text{DROP}_{redeem} *  \text{DROP}_{redeem} + \text{TIN}_{redeem} * \text{TIN}_{redeem} +  \text{TIN}_{supply} * \text{TIN}_{supply} + \text{DROP}_{supply} * \text{DROP}_{supply}
 $$
 
-See More: [Centrifuge Design Doc: Solver - Decision Function](https://centrifuge.hackmd.io/qor69CIXSl6pw-hAq2ocAQ)
+See More: [XFT Design Doc: Solver - Decision Function](https://centrifuge.hackmd.io/qor69CIXSl6pw-hAq2ocAQ)
 
 ### State Improvements Submissions
 

@@ -5,13 +5,13 @@ title: Networks
 contributors: <William Freudenberger:william@centrifuge.io>
 category: subpage
 ---
-# Centrifuge Networks
+# XFT Networks
 
-Centrifuge operates three networks, each tailored for specific stages of development, testing, and deployment. The native assets across all networks have 18 decimals of precision.
+XFT operates three networks, each tailored for specific stages of development, testing, and deployment. The native assets across all networks have 18 decimals of precision.
 
 For instructions on running a node for any of the three networks, please refer to the [relevant documentation](../../guides/running-a-centrifuge-node/index.md)
 
-| **Feature**             | **Centrifuge**                                                                                                     | **Altair**                                                                                                     | **Demo**                                                                                                                |
+| **Feature**             | **XFT**                                                                                                     | **Altair**                                                                                                     | **Demo**                                                                                                                |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | **Network Type**        | Mainnet                                                                                                            | Mainnet (Canary)                                                                                               | Testnet                                                                                                                 |
 | **Parachain ID**        | 2031                                                                                                               | 2088                                                                                                           | 2031                                                                                                                    |

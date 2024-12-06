@@ -1,7 +1,7 @@
 ---
 id: pools
 order: 1
-title: Centrifuge Pools
+title: XFT Pools
 ---
 
 # Placeholder

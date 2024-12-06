@@ -1,7 +1,7 @@
 ---
 id: cent-chain
 order: 3
-title: Built on Centrifuge Chain
+title: Built on XFT Chain
 contributors: <Jeroen Offerijns:jeroen@k-f.co>, <Dennis Wellmann:dennis@k-f.co>, <Devin Black:devin@k-f.co>
 category: subpage
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
   - /getting-started/cent-chain/
 ---
 
-# Built on Centrifuge Chain
+# Built on XFT Chain
 
-Centrifuge is built on Centrifuge Chain, a layer 1 blockchain custom built for financing real-world assets(RWAs). Real-world assets are tokenized as NFTs (Non-Fungible Tokens) to create an on-chain representation, and are linked to detailed off-chain data. The assets are pooled together and securitized by the issuer. Liquidity Pools can be used to invest from other blockchains. Integrations with DeFi protocols such as Maker, Aave, and more are already set up across the ecosystem.
+XFT is built on XFT Chain, a layer 1 blockchain custom built for financing real-world assets(RWAs). Real-world assets are tokenized as NFTs (Non-Fungible Tokens) to create an on-chain representation, and are linked to detailed off-chain data. The assets are pooled together and securitized by the issuer. Liquidity Pools can be used to invest from other blockchains. Integrations with DeFi protocols such as Maker, Aave, and more are already set up across the ecosystem.
 
 The advantages of a blockchain custom-built for RWA include:
 
@@ -22,6 +22,6 @@ The advantages of a blockchain custom-built for RWA include:
 
 ## Governed by CFG holders
 
-The native token of Centrifuge Chain, CFG, is used as an on-chain governance mechanism that empowers CFG holders to manage the development of the Centrifuge Protocol.
+The native token of XFT Chain, CFG, is used as an on-chain governance mechanism that empowers CFG holders to manage the development of the XFT Protocol.
 
-Centrifuge's formalized governance system enables onchain voting mechanisms for binding and transparent governance by CFG token holders. Beyond the use of the Centrifuge token (CFG) for governance of the blockchain, CFG is also used to pay transaction fees.
+XFT's formalized governance system enables onchain voting mechanisms for binding and transparent governance by CFG token holders. Beyond the use of the XFT token (CFG) for governance of the blockchain, CFG is also used to pay transaction fees.

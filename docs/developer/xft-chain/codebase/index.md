@@ -6,9 +6,9 @@ category: subpage
 contributors: <William Freudenberger:william@centrifuge.io>, <Cosmin Damian:cosmin@centrifuge.io>
 ---
 
-# Centrifuge Chain Codebase
+# XFT Chain Codebase
 
-The Centrifuge Chain functionality is grouped in 4 key groups of modules (also known as pallets). `pool-system` is at the core of everything, tieing together the investment side with the asset side.
+The XFT Chain functionality is grouped in 4 key groups of modules (also known as pallets). `pool-system` is at the core of everything, tieing together the investment side with the asset side.
 
 **Pools** (`pool-system`, `pool-registry`, `investments`, `pool-fees`): The core logic for managing investment pools such as bundling loans, slicing pools into tranches and controlling investment epochs, as well as charging and accruing fees incurred by pool issuers.
 
@@ -20,9 +20,9 @@ The Centrifuge Chain functionality is grouped in 4 key groups of modules (also k
 
 ![](./images/centrifuge-chain-pallets.png#width=120%;)
 
-## Centrifuge Chain Pallets
+## XFT Chain Pallets
 
-On top of the [Substrate FRAME](https://docs.substrate.io/reference/frame-pallets/) framework, Centrifuge Chain is composed of custom pallets which can be found inside the [pallets directory](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets). The following list gives a brief overview, and links to the corresponding documentation:
+On top of the [Substrate FRAME](https://docs.substrate.io/reference/frame-pallets/) framework, XFT Chain is composed of custom pallets which can be found inside the [pallets directory](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets). The following list gives a brief overview, and links to the corresponding documentation:
 
 - [**anchors**](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets/anchors) ([docs](https://reference.centrifuge.io/pallet_anchors/index.html)): Storing hashes of documents on-chain. The documents are stored in the Private Off-chain Data (POD) node network.
 
@@ -42,7 +42,7 @@ On top of the [Substrate FRAME](https://docs.substrate.io/reference/frame-pallet
 
 - [**investments**](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets/investments) ([docs](https://reference.centrifuge.io/pallet_investments/index.html)): Provides orders for assets and allows user to collect these orders.
 
-- [**keystore**](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets/keystore) ([docs](https://reference.centrifuge.io/pallet_keystore/index.html)): Linking public keys to accounts. Supporting the operations of the offchain document consensus layer through the Centrifuge POD (Private Offchain Data) Node.
+- [**keystore**](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets/keystore) ([docs](https://reference.centrifuge.io/pallet_keystore/index.html)): Linking public keys to accounts. Supporting the operations of the offchain document consensus layer through the XFT POD (Private Offchain Data) Node.
 
 - [**liquidity-pools**](https://github.com/centrifuge/centrifuge-chain/tree/main/pallets/liquidity-pools) ([docs](https://reference.centrifuge.io/pallet_liquidity_pools/index.html)): Provides the toolset to enable foreign investments on foreign domains.
 

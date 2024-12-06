@@ -1,7 +1,7 @@
 ---
 id: running-a-centrifuge-node
 order: 1
-title: Running a Centrifuge node
+title: Running a XFT node
 category: subpage
 contributors: <Jeroen:jeroen@k-f.co> , <Guillermo:guillermo@k-f.co>
 redirect_from:
@@ -11,11 +11,11 @@ redirect_from:
   - /developer/
 ---
 
-# Running a Centrifuge node
+# Running a XFT node
 
 ## Introduction
 
-Running a full node allows to query the Centrifuge Chain blocks through it's RPC endpoints, wether you're a Dapp developer or you
+Running a full node allows to query the XFT Chain blocks through it's RPC endpoints, wether you're a Dapp developer or you
 just want to be fully trustless and run your own node this guide will teach you how to setup your own full or archive node
 
 ## Hardware requirements
@@ -25,7 +25,7 @@ just want to be fully trustless and run your own node this guide will teach you 
 
 Note: Syncing and Runtime Upgrades might put extra load on the node. It is recommended to increase the resources until the node is fully synced. Use a process manager to restart the process if it reaches memory limits, hangs, or crashes.
 
-- Check out [Centrifuge Releases](https://github.com/centrifuge/centrifuge-chain/releases) to pick the latest production release
+- Check out [XFT Releases](https://github.com/centrifuge/centrifuge-chain/releases) to pick the latest production release
 - Install [Docker](https://www.docker.com/) OR [rustup](https://rustup.rs/)
 
 ## CLI arguments
@@ -73,7 +73,7 @@ Some of our recommended settings are commented for clarification, the rest can b
 
 ### Fast synching
 
-Centrifuge nodes support fast synching using `--sync=warp` and `--sync=fast` for both the parachain and the relay chain arguments
+XFT nodes support fast synching using `--sync=warp` and `--sync=fast` for both the parachain and the relay chain arguments
 
 ### Archive node
 
@@ -108,7 +108,7 @@ ExecStart=/var/lib/centrifuge-data/centrifuge-chain \
 
 ### Network values
 
-#### Mainnet (Centrifuge Chain)
+#### Mainnet (XFT Chain)
 
 Bootnodes:
 
@@ -127,7 +127,7 @@ Chain args:
 --chain=polkadot
 ```
 
-#### Testnet (Centrifuge Demo)
+#### Testnet (XFT Demo)
 
 Bootnodes:
 
@@ -153,8 +153,8 @@ for the docker container or in the `node/res/` folder [in the codebase](https://
 
 ### Docker
 
-You can use the container published on the [Centrifuge Docker Hub repo](https://hub.docker.com/r/centrifugeio/centrifuge-chain)
-or be fully trustless by cloning the [Centrifuge Chain repository](https://github.com/centrifuge/centrifuge-chain/)
+You can use the container published on the [XFT Docker Hub repo](https://hub.docker.com/r/centrifugeio/centrifuge-chain)
+or be fully trustless by cloning the [XFT Chain repository](https://github.com/centrifuge/centrifuge-chain/)
 and using the [Dockerfile](https://github.com/centrifuge/centrifuge-chain/blob/main/docker/centrifuge-chain/Dockerfile) (2-4h build time on an average machine).
 If you are building the image yourself, make sure you have checked out the latest tag for the most recent release:
 
@@ -209,7 +209,7 @@ docker-compose pull --policy always && docker-compose up -d
 We recommend using a stateful set to run multiple replicas and balance the load between them via an ingress.
 
 > **WARNING:** using these K8 manifests as-is will not work, it has been included in this guide
-> to give experienced Kubernetes operators a starting point. Centrifuge cannot provide Kubernetes
+> to give experienced Kubernetes operators a starting point. XFT cannot provide Kubernetes
 > support to node operators, use at your own risk.
 
 **StatefulSet Example**
@@ -420,7 +420,7 @@ Change the `ports` based on your network setup.
 ```bash
 sudo tee <<EOF >/dev/null /etc/systemd/system/centrifuge.service
 [Unit]
-Description="Centrifuge systemd service"
+Description="XFT systemd service"
 After=network.target
 StartLimitIntervalSec=0
 

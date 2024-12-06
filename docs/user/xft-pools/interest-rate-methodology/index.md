@@ -11,8 +11,8 @@ redirect_from:
 
 # Interest Rate Methodology
 
-The standard within the Centrifuge Protocol is to compound and calculate interest every second.
-Transactions on the Centrifuge Protocol are being calculated and executed continuously at any day and time. This requires an equivalent interest rate mechanism that is able to provide the correct amount of interest at any point in time.
+The standard within the XFT Protocol is to compound and calculate interest every second.
+Transactions on the XFT Protocol are being calculated and executed continuously at any day and time. This requires an equivalent interest rate mechanism that is able to provide the correct amount of interest at any point in time.
 
 ## Financial Background
 
@@ -54,9 +54,9 @@ As you can see, the higher the compounding frequency, the higher the effect of c
 
 ### APR vs APY
 
-To fully understand Centrifuge Protocol interest rates and yields, it is also important to understand the difference between an `Annual Percentage Rate (APR)` and `Annual Percentage Yield (APY)`. The main difference is that an APY takes into account compounded interest, while the APR does not. Thus, for annual compounding, APR and APY are equal. For higher compounding frequencies such as monthly or daily compounding, an APY is higher than the annual APR. If you think of the example above, the APR is 6.00%. Your APY for monthly compounding is 6.1678%. The APY for secondly compounding 6.1837%. The higher the compounding frequency, the higher the equivalent APY.
+To fully understand XFT Protocol interest rates and yields, it is also important to understand the difference between an `Annual Percentage Rate (APR)` and `Annual Percentage Yield (APY)`. The main difference is that an APY takes into account compounded interest, while the APR does not. Thus, for annual compounding, APR and APY are equal. For higher compounding frequencies such as monthly or daily compounding, an APY is higher than the annual APR. If you think of the example above, the APR is 6.00%. Your APY for monthly compounding is 6.1678%. The APY for secondly compounding 6.1837%. The higher the compounding frequency, the higher the equivalent APY.
 
-In the Centrifuge Protocol, the input rate usually is an APR. E.g., if you look up at the financing fee of an asset on-chain, the number you’d find would be an APR. Since this APR is applied every second, the effective yield stemming from the interest accrued can be approximated best with an APY compounded secondly. Thus also in the Centrifuge App, most input rates will expect an APR, while the displayed interest rates and yields will commonly be APYs.
+In the XFT Protocol, the input rate usually is an APR. E.g., if you look up at the financing fee of an asset on-chain, the number you’d find would be an APR. Since this APR is applied every second, the effective yield stemming from the interest accrued can be approximated best with an APY compounded secondly. Thus also in the XFT App, most input rates will expect an APR, while the displayed interest rates and yields will commonly be APYs.
 
 ## On-chain implementation
 
@@ -74,7 +74,7 @@ with
 | Variable | Description                                                                                              |
 | -------- | -------------------------------------------------------------------------------------------------------- |
 | $i$      | Input interest rate defined as APR                                                                       |
-| $y$      | Constant, reflecting the compounding frequency (for Centrifuge Protocol, seconds in a year: 31536000360) |
+| $y$      | Constant, reflecting the compounding frequency (for XFT Protocol, seconds in a year: 31536000360) |
 
 The Debt $D$ at any point in time based on Principal $P$ for time $t$ (in seconds) can then be calculated as:
 
@@ -106,4 +106,4 @@ Please find a simple calculator for both standard compounding formulas and the o
 
 ### On-chain number format
 
-Centrifuge-Protocol uses fixed precision decimals for monetary amounts on-chain. Interest Rates usually have 27 digits precision and amounts 18 digits precision. To illustrate, the 1.00000000190259 $rate$ variable representing a 6.00% APR from the example above would be `1000000001902587519025875190` on-chain. The debt of \$106.1837 would be `106183700000000000000`.
+XFT-Protocol uses fixed precision decimals for monetary amounts on-chain. Interest Rates usually have 27 digits precision and amounts 18 digits precision. To illustrate, the 1.00000000190259 $rate$ variable representing a 6.00% APR from the example above would be `1000000001902587519025875190` on-chain. The debt of \$106.1837 would be `106183700000000000000`.

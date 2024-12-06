@@ -17,7 +17,7 @@ Asset valuation is the process of determining the current worth of an asset or p
 
 Depending on the asset class, there may be different approaches to valuing an asset or pool of assets. For assets with a public liquid secondary market, such as stocks, bonds, or most fungible crypto tokens, values are usually approximated through available market prices.
 
-Determining the value of illiquid assets common in private credit, which are mostly financed through the Centrifuge protocol, is more difficult because, by definition, there isn't a liquid secondary market to determine the value.
+Determining the value of illiquid assets common in private credit, which are mostly financed through the XFT protocol, is more difficult because, by definition, there isn't a liquid secondary market to determine the value.
 
 In such cases, the valuation methodology is often based on a fair value approach utilizing a financial model ("marked to model"). This can involve valuing the present value of future cash flows expected to be received based on these financings, using the discounted cash flow (DCF) method. Another approach may be "marking at par," in which the value of the outstanding debt is simply based on the amount owed.
 
@@ -25,11 +25,11 @@ In such cases, the valuation methodology is often based on a fair value approach
 
 ### Flexible, modular valuation setup
 
-The Centrifuge Protocol is asset class-agnostic and can handle different kinds of asset valuation methodologies. The valuation method chosen can be configured on a pool level based on the underlying asset class. Currently implemented and used are DCF-based approaches and "marking at par". For example, legacy Ethereum-based Tinlake pools predominantly apply a simplified one cash-flow approach for financing invoices or trade finance with a simple bullet loan (one borrow, one repayment). Pools financing longer-term assets with regular interest payments may opt for a classic DCF approach with multiple cash flows.
+The XFT Protocol is asset class-agnostic and can handle different kinds of asset valuation methodologies. The valuation method chosen can be configured on a pool level based on the underlying asset class. Currently implemented and used are DCF-based approaches and "marking at par". For example, legacy Ethereum-based Tinlake pools predominantly apply a simplified one cash-flow approach for financing invoices or trade finance with a simple bullet loan (one borrow, one repayment). Pools financing longer-term assets with regular interest payments may opt for a classic DCF approach with multiple cash flows.
 
 ### From asset values to pool values
 
-The valuation on Centrifuge Protocols is implemented on a per-asset level. That means whatever valuation methodology is chosen is applied on each individual asset. The sum of the asset values of all individual assets adds up to the portfolio value and together the pool reserve then equals the pool value.
+The valuation on XFT Protocols is implemented on a per-asset level. That means whatever valuation methodology is chosen is applied on each individual asset. The sum of the asset values of all individual assets adds up to the portfolio value and together the pool reserve then equals the pool value.
 
 ### From valuation to token prices
 
@@ -37,13 +37,13 @@ The pool value mainly drives the price of the most junior tranche of a pool. As 
 
 ### Handling of write-offs and write-downs
 
-Centrifuge allows for a flexible treatment of defaults implented as write-offs and write-downs on the valuation of an asset. If the repayment of an asset is overdue the valuation can be writte-down to a certain percentage after a defined number of days following pre-determined criteria (e.g. a grace period and collection period). The final step of this cascade of write-downs would be to fully write-off the asset. Note, that write-offs and write-downs only impact the most junior tranche of a pool.
+XFT allows for a flexible treatment of defaults implented as write-offs and write-downs on the valuation of an asset. If the repayment of an asset is overdue the valuation can be writte-down to a certain percentage after a defined number of days following pre-determined criteria (e.g. a grace period and collection period). The final step of this cascade of write-downs would be to fully write-off the asset. Note, that write-offs and write-downs only impact the most junior tranche of a pool.
 
 ## Introduction to "DCF" valuation
 
 ### Overview
 
-The most common valuation methodology currently applied for pools on Centrifuge is a simple simplified "discounted cash flow" (DCF) model with one expected cash flow. This is often used for simple bullet loan structures (one borrow, one repayment) which are common particularly in invoice financing and trade finance. We will describe this methodology in more detail below. The same concept can also be applied to DCF valuation with several cash flows.
+The most common valuation methodology currently applied for pools on XFT is a simple simplified "discounted cash flow" (DCF) model with one expected cash flow. This is often used for simple bullet loan structures (one borrow, one repayment) which are common particularly in invoice financing and trade finance. We will describe this methodology in more detail below. The same concept can also be applied to DCF valuation with several cash flows.
 
 ### Valuation process
 
@@ -51,7 +51,7 @@ The DCF valuation process can be summarized as follows:
 
 1. **Derive expected cash flow**
    For every outstanding financing of an asset, the `Expected repayment amount` is derived based on (i) the expected repayment dates and (ii) the expected repayment amounts.
-   (i) The `Expected repayment date` is derived on contractual obligations associated with the financing, e.g. the due date of the underlying invoice. This is provided through an Oracle based on the documents underlying the NFT minted on Centrifuge's P2P Protocol.
+   (i) The `Expected repayment date` is derived on contractual obligations associated with the financing, e.g. the due date of the underlying invoice. This is provided through an Oracle based on the documents underlying the NFT minted on XFT's P2P Protocol.
    (ii) The `Expected repayment amount` is projected based on the outstanding Tinlake financing by applying the financing fee on the current debt until the repayment date.
 
 2. **Risk-adjust expected cash flows**

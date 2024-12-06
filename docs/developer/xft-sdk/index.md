@@ -1,13 +1,13 @@
 ---
 id: centrifuge-sdk
 order: 4
-title: Centrifuge SDK
+title: XFT SDK
 contributors: <Sophia:sophia@k-f.co> , <Onno:onno@k-f.co> , <JP:jp@k-f.co>
 ---
 
-# Centrifuge SDK
+# XFT SDK
 
-Centrifuge SDK provides a JavaScript client to interact with Centrifuge Chain. It provides comprehensive modules to easily create and manage pools, nfts, loans and metadata. CentrifugeJS is built on top of [@polkadot/api](https://polkadot.js.org/docs/api) and uses the [RxJS](https://rxjs.dev/api) API to query chaindata and submit extrinsics.
+XFT SDK provides a JavaScript client to interact with XFT Chain. It provides comprehensive modules to easily create and manage pools, nfts, loans and metadata. XFTJS is built on top of [@polkadot/api](https://polkadot.js.org/docs/api) and uses the [RxJS](https://rxjs.dev/api) API to query chaindata and submit extrinsics.
 
 ## Installation
 
@@ -20,14 +20,14 @@ npm install --save @centrifuge/centrifuge-js
 Create an instance and pass optional configuration
 
 ```js
-import Centrifuge from "@centrifuge/centrifuge-js";
+import XFT from "@centrifuge/centrifuge-js";
 
-const centrifuge = new Centrifuge({
+const centrifuge = new XFT({
   centrifugeWsUrl: "wss://fullnode.development.cntrfg.com",
 });
 ```
 
-The following config options can be passed on initilization of CentrifugeJS:
+The following config options can be passed on initilization of XFTJS:
 
 #### `network`
 
@@ -97,7 +97,7 @@ const data = centrifuge.metadata.getMetadata("uri")
 
 ## Queries
 
-All of the CentrifugeJS modules have queries prefixed with `get` that return [Observables](https://rxjs.dev/guide/observable).
+All of the XFTJS modules have queries prefixed with `get` that return [Observables](https://rxjs.dev/guide/observable).
 
 Here's a full sample how to query all of the pools and subscribe to the state. Behind the scenes the pool data is aggregated from multiple sources and formatted into an object. By subscribing to the observable you're also subscribing to events on-chain that will cause the subscription to update when necessary.
 

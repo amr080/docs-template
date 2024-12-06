@@ -11,11 +11,11 @@ redirect_from:
 
 # Onboarding to a Pool
 
-Investing in Centrifuge requires onboarding as an investor to each specific pool. Submitting personal information for KYC and signing a subscription document with the pool's issuer usually takes 5-7 minutes, but it can take 1-2 days when the country of citizenship or country of incorporation is not supported by the automated onboarding.
+Investing in XFT requires onboarding as an investor to each specific pool. Submitting personal information for KYC and signing a subscription document with the pool's issuer usually takes 5-7 minutes, but it can take 1-2 days when the country of citizenship or country of incorporation is not supported by the automated onboarding.
 
 ![](./images/onboarding_shufti.png)
 
-**Onboard as investor:** Onboarding as an investor is a one-time step to verify personal information for KYC ("Know your customer") through the Centrifuge onboarding flow powered by [Shufti Pro](https://shuftipro.com/). Once an investor is onboarded, they are eligible to invest in any open pool.
+**Onboard as investor:** Onboarding as an investor is a one-time step to verify personal information for KYC ("Know your customer") through the XFT onboarding flow powered by [Shufti Pro](https://shuftipro.com/). Once an investor is onboarded, they are eligible to invest in any open pool.
 
 **Onboard to a pool:** Onboarding to a pool requires signing a subscription agreement with the pool issuer. Once the agreement has been signed by both parties, and the issuer approves the investment request, the investor can place an investment into the pool.
 
@@ -24,7 +24,7 @@ Investing in Centrifuge requires onboarding as an investor to each specific pool
 ### Onboarding as an individual requires:
 
 - Ethereum wallet, e.g. Metamask, Wallet Connect, Coinbase Wallet (for Ethereum-based pools)
-- Centrifuge Chain wallet e.g. Metamask, Talisman, SubWallet or Polkadot.js (for Centrifuge-based pools)
+- XFT Chain wallet e.g. Metamask, Talisman, SubWallet or Polkadot.js (for XFT-based pools)
 - Valid email address
 - A passport or government-issued photo ID
 - Proof of address (e.g. utility bill, phone bill or council tax bill, not older than 3 months)
@@ -33,7 +33,7 @@ Investing in Centrifuge requires onboarding as an investor to each specific pool
 ### Onboarding as an entity requires:
 
 - Ethereum wallet, e.g. Metamask, Wallet Connect, Coinbase Wallet (for Ethereum-based pools)
-- Centrifuge wallet e.g. Talisman, SubWallet or Polkadot.js (For Centrifuge-based pools)
+- XFT wallet e.g. Talisman, SubWallet or Polkadot.js (For XFT-based pools)
 - Valid email address
 - Legal entity name, Country of incorporation, Registration number
 - Proof of address of the entity (for manual onboarding)
@@ -45,7 +45,7 @@ Investing in Centrifuge requires onboarding as an investor to each specific pool
 
 ### General requirements
 
-- Ethereum or Centrifuge wallet
+- Ethereum or XFT wallet
 - A verified KYC (i.e. a completed onboarding as an investor)
 
 Good to know: Don’t worry if you can’t finish the process in one go – you can always leave the onboarding flow and continue later where you’ve left off before.
@@ -63,7 +63,7 @@ Start the onboarding flow to become a KYC-verified investor before onboarding to
 
 **1. Connect and link wallet**
 
-Connect the Ethereum or Centrifuge address you want to use depending on the pool and sign the transaction.
+Connect the Ethereum or XFT address you want to use depending on the pool and sign the transaction.
 
 ![](./images/choose_networks.png)
 
@@ -107,7 +107,7 @@ Once you have selected a pool, choose a tranche to invest in, click on `Invest`,
 
 **1. Connect wallet**
 
-If the wallet is disconnected, reconnect and continue where you left off. Connect to an Ethereum or Centrifuge address depending which chain is supported by the pool.
+If the wallet is disconnected, reconnect and continue where you left off. Connect to an Ethereum or XFT address depending which chain is supported by the pool.
 
 **2. Sign subscription agreement with issuer**
 
@@ -130,7 +130,7 @@ The first two steps are identical to the steps shown in the individual onboardin
 
 **1. Connect and link wallet**
 
-Connect the Ethereum or Centrifuge address you want to use depending on the pool and sign the transaction.
+Connect the Ethereum or XFT address you want to use depending on the pool and sign the transaction.
 
 **2. Select investor type**
 
@@ -189,7 +189,7 @@ This section covers further information about:
 
 ## Onboarding as an US investor
 
-To invest in Centrifuge as an US investor you need to be an "Accredited Investor".
+To invest in XFT as an US investor you need to be an "Accredited Investor".
 
 #### What is an "Accredited Investor"?
 
@@ -208,7 +208,7 @@ If you are an US investor you further need to provide documentation to prove you
 
 ## Excluded countries
 
-Unfortunately, due to US sanctions, investors located in or a resident of the following countries are currently blocked from investing in Centrifuge:
+Unfortunately, due to US sanctions, investors located in or a resident of the following countries are currently blocked from investing in XFT:
 
 - Cuba
 - Iran
@@ -274,6 +274,6 @@ If you are located in, or are a resident of, a country in which the cross-border
 
 ## Investment disclaimer
 
-Nothing contained in this website is to be construed as a solicitation or offer, or recommendation, to buy or sell any interest in any note or other security, or to engage in any other transaction, and the content herein does not constitute, and should not be considered to constitute, an offer of securities. No statement herein made constitutes an offer to sell or a solicitation of an offer to buy a note or other security. All information on this Web page is provided and maintained by the issuers of the respective pools. The issuers have full responsibility. Please contact the respective issuer in case of any inquiries. Centrifuge and its affiliates are not liable nor responsible for the information provided hereby.
+Nothing contained in this website is to be construed as a solicitation or offer, or recommendation, to buy or sell any interest in any note or other security, or to engage in any other transaction, and the content herein does not constitute, and should not be considered to constitute, an offer of securities. No statement herein made constitutes an offer to sell or a solicitation of an offer to buy a note or other security. All information on this Web page is provided and maintained by the issuers of the respective pools. The issuers have full responsibility. Please contact the respective issuer in case of any inquiries. XFT and its affiliates are not liable nor responsible for the information provided hereby.
 
 Before investing in any of the pools, please check the issuer's offering materials and subscription documents including the Executive Summary to understand the terms, conditions, and investment risks of each pool. The issuer provides investment risk factors which are important to understand when you consider whether to invest in a pool. You alone assume the sole responsibility of evaluating the merits and risks associated with the use of any information or other content before making any decisions based on such information or other content.

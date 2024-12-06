@@ -21,9 +21,9 @@ Together, this creates onchain, asset-level transparency: an investor can see at
 
 ## Revolving pools
 
-In traditional finance, many securitizations are static: a group of investors provides capital to the issuer, the issuer finances debt, and then repays interest and principal of the assets over time as they mature. At the end, the investors get their capital back plus the yield. Instead of being a good deal for investors, this situation creates unnecessary overhead, because they have to reinvest after the pools mature. This also makes it harder for other DeFi protocols to integrate with the Centrifuge, as they will have to invest in new pools constantly.
+In traditional finance, many securitizations are static: a group of investors provides capital to the issuer, the issuer finances debt, and then repays interest and principal of the assets over time as they mature. At the end, the investors get their capital back plus the yield. Instead of being a good deal for investors, this situation creates unnecessary overhead, because they have to reinvest after the pools mature. This also makes it harder for other DeFi protocols to integrate with the XFT, as they will have to invest in new pools constantly.
 
-To solve this, pools on Centrifuge are revolving: investment and redemption (the withdrawal of invested capital) orders can come in at any time, and assets can be financed and repaid continuously. This has multiple advantages for both issuers and investors:
+To solve this, pools on XFT are revolving: investment and redemption (the withdrawal of invested capital) orders can come in at any time, and assets can be financed and repaid continuously. This has multiple advantages for both issuers and investors:
 
 - Issuers can finance assets at any time given liquidity in the pools;
 - Investors, including DeFi protocols, can make flexible portfolio allocation decisions without the need to constantly reinvest;
@@ -37,11 +37,11 @@ A decentralized pool where investors of different tranches can invest and redeem
 
 ## Onchain NAV
 
-The second component to enable revolving pools is an onchain NAV (Net Asset Value) calculation: to support continuous investments and redemptions, accurate pricing for the pool tokens is required. In traditional finance, pricing for such illiquid assets is usually done using Discounted Cash Flow (DCF) models: expected cash flows (e.g. principal payments of assets in the pool at maturity) are discounted to their present value. Centrifuge brings these calculations onchain and calculates the new NAV on an ongoing basis.
+The second component to enable revolving pools is an onchain NAV (Net Asset Value) calculation: to support continuous investments and redemptions, accurate pricing for the pool tokens is required. In traditional finance, pricing for such illiquid assets is usually done using Discounted Cash Flow (DCF) models: expected cash flows (e.g. principal payments of assets in the pool at maturity) are discounted to their present value. XFT brings these calculations onchain and calculates the new NAV on an ongoing basis.
 
 The NAV should also account for different kinds of loans, to ensure accurate pricing: financing for real-world assets can vary from simple bullet loans (borrow now and repay principal plus interest at maturity) to complex amortization schedules (repayment of principal plus interest at specific intervals).
 
-The NAV also needs to account for defaults of assets: if an asset fails to be repaid, the NAV should represent this. Centrifuge supports this through onchain representation of write offs of assets. The Protocol will show written off assets on a predefined write-off schedule (e.g. when an asset is 30 days overdue, 25% of the asset value should be written off, and a penalty interest rate of 3% should apply). This enables fairer pricing of overdue assets. Assets can also be written off manually by a third party.
+The NAV also needs to account for defaults of assets: if an asset fails to be repaid, the NAV should represent this. XFT supports this through onchain representation of write offs of assets. The Protocol will show written off assets on a predefined write-off schedule (e.g. when an asset is 30 days overdue, 25% of the asset value should be written off, and a penalty interest rate of 3% should apply). This enables fairer pricing of overdue assets. Assets can also be written off manually by a third party.
 
 ## Tranching
 
