@@ -61,7 +61,7 @@ D = P \times (1 + \frac{r}{n})^{nt}
 $$
 ```
 
-## Development Deployment
+## Development Server (codespaces)
 1. npm uninstall -g yarn
 2. corepack enable
 3. corepack prepare yarn@4.1.1 --activate
@@ -69,3 +69,41 @@ $$
 5. corepack yarn install
 6. corepack yarn develop
 
+## Development Server (locally)
+1. run powershell as administrator
+2. corepack enable
+3. corepack prepare yarn@4.1.1 --activate
+4. corepack yarn --version
+5. corepack yarn install
+6. corepack yarn develop
+7. http://localhost:8001
+
+## Branches
+| Name | Description                | Date       |
+|-------------|----------------------------|------------|
+| develop     | centrifuge template        | 2024-12-05 |
+| xft-v1      | initial xft conversion     | 2024-12-05 |
+| xft-v2      | local environment          | 2024-12-05 |
+
+## v0 Dependencies
+1. https://v0.dev/chat/projects/xqCXxQlT66O
+2. Connected project: v0-documentation-xqcxxqlt66o
+3. https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o
+
+
+## Deployments
+1. https://v0-documentation-xqcxxqlt66o.vercel.app/getting-started/introduction/welcome/
+    *missing auto-redirect  
+2. http://localhost:8000
+3. http://localhost:8001
+
+
+
+
+## To-Do
+
+| Name | Status                |
+|-------------|----------------------------|
+| unlink fork     | --        |
+| push to XFT org github       | --     |
+| new branch xft-v2      | --          |
