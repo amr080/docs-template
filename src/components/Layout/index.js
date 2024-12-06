@@ -9,7 +9,7 @@ import styled from "styled-components";
 import "./styles.css";
 import "@fontsource/inter";
 
-import centrifugeLogo from "../../images/logo-centrifuge-full.svg";
+import centrifugeLogo from "../../images/logo-xft-full.svg";
 import githubLogo from "../../images/github-logo.svg";
 
 import SideNav from "../SideNav";
@@ -235,3 +235,4 @@ Layout.defaultProps = {
 };
 
 export default Layout;
+

@@ -4,7 +4,7 @@ import { Close } from "grommet-icons";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { useLocation } from "@reach/router";
 
-import centrifugeLogo from "../../images/logo-centrifuge-full.svg";
+import centrifugeLogo from "../../images/logo-xft-full.svg";
 import getting_started_face from "../../images/faces/getting-started-small.svg";
 import use_face from "../../images/faces/use.svg";
 import build_face from "../../images/faces/build.svg";
@@ -129,3 +129,4 @@ const SideNav = ({ onClose, size }) => {
 };
 
 export default SideNav;
+

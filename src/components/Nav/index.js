@@ -10,7 +10,7 @@ import { Box } from "grommet";
 import Search from "../Search";
 // import styled from "styled-components";
 // import { navigate } from "gatsby";
-// const logoCentrifuge = require("../../images/logo-centrifuge-full.svg");
+// const logoCentrifuge = require("../../images/logo-xft-full.svg");
 
 // const Logo = styled(Image)`
 //   vertical-align: middle;
@@ -149,3 +149,4 @@ const Nav = () => {
 };
 
 export default Nav;
+

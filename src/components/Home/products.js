@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Grid, Image, Text, Anchor, Heading } from "grommet";
-import centrifugeChainLogo from "../../images/centrifuge_chain.svg";
+import centrifugeChainLogo from "../../images/xft_chain.svg";
 import nftLogo from "../../images/nft.svg";
 import p2pNodeLogo from "../../images/p2p_node.svg";
 import { UnstyledAnchor } from "../Links";
-import tinlakeLogo from "../../images/tinlake_logo_dev.svg";
+import tinlakeLogo from "../../images/xft_logo_dev.svg";
 
 const anchorStyles = {
   fontWeight: "500",
@@ -119,3 +119,4 @@ const Products = ({ areas, columns, rows }) => {
 };
 
 export default Products;
+
