@@ -110,7 +110,8 @@ done
            -replace 'tinlake', 'xft'
     } | Set-Content $_.FullName
 }
-
+28. git checkout -b xft-v2
+29. [USE WITH CAUTION] >>> rm -Recurse -Force .\*
 
 
 ## Development Server (codespaces)
@@ -129,8 +130,8 @@ done
 5. corepack yarn install
 6. corepack yarn develop
 7. [http://localhost:8001](http://localhost:8001/getting-started/introduction/welcome/)
-8. ctrl + c
-9. 
+8. rm -Recurse -Force .\.cache, .\public, .\node_modules
+
 
 
 ## Project
