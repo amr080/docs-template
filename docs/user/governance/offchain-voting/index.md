@@ -2,7 +2,7 @@
 id: off-chain-voting
 order: 2
 title: Offchain Voting
-contributors: <Orhan Klardashti:klardashti@gmail.com>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /use/offchain-voting

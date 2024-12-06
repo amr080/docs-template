@@ -2,7 +2,7 @@
 id: setup-wallet
 order: 1
 title: Wallet Setup
-contributors: <Dennis Wellmann:dennis@k-f.co>, <Anna Mehrlaender:anna@k-f.co>, <Orhan:klardashti@gmail.com>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /use/setup-wallet

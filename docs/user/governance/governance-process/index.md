@@ -2,7 +2,7 @@
 id: governance-process
 order: 1
 title: Governance Process
-contributors: <Orhan Klardashti:klardashti@gmail.com>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /use/governance-process

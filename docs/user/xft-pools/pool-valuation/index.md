@@ -2,7 +2,7 @@
 id: pool-valuation
 order: 5
 title: Pool Valuation (NAV)
-contributors: <Dennis Wellmann:dennis@centrifuge.io>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /learn/pool-valuation

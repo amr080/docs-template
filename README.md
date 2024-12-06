@@ -168,6 +168,7 @@ done
 | xft-v1      | initial xft conversion     | 2024-12-05 |
 | xft-v2      | local environment          | 2024-12-05 |
 | xft-v3      | functional deploy          | 2024-12-05 |
+| xft-v4      | prod test                  | 2024-12-06 |
 
 ## v0 Dependencies
 1. https://v0.dev/chat/projects/xqCXxQlT66O
@@ -206,15 +207,28 @@ done
 6. corepack yarn --version
 7. corepack yarn install
 8. corepack yarn develop
+9. git add .
+10. git commit -m "prod"
+11. git push -u origin
 
 ### Vercel
-Branch: xft-v3<br>
-Framework: Gatsby.js<br>
-Node.js Version: 22.x<br>
-URL: https://docs.xft.finance/<br>
-Redirect base: v0-documentation-xqcxxqlt66o.vercel.app<br>
-Redirect path: /getting-started/introduction/welcome/<br>
+
+1. Framework preset: Gatsby.js
+2. Output directory:
+3. Install cmd: 
+4. Development cmd: 
+5. Root directory: 
+6. Node.js Version: 22.x
+7. URL: https://docs.xft.finance/
+8. Production branch: xft-v4
+9. Redirect base: v0-documentation-xqcxxqlt66o.vercel.app
+10. Redirect path: /getting-started/introduction/welcome/
+
+<br>
+
+[Project](vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o)<br>
 [Domain settings](https://vercel.com/amr080s-projects/v0-documentation-xqcxxqlt66o/settings/domains)<br>
+[Connected Git Repository](https://github.com/amr080/docs-template)
 
 ### DNS
 
@@ -238,7 +252,7 @@ x = completed
 | add user pages     | --          |
 | add dev pages     | --          |
 | add user pages     | --          |
-| fix redirect     | --          |
+| fix _redirect     | --          |
 | favicon     | x          |
 | browser tab description     | x          |
 | https://docs.xft.finance/ DNS record     | x          |

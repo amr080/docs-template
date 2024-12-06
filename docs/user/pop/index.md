@@ -2,7 +2,7 @@
 id: pop
 order: 4
 title: Launching a Pool
-contributors: <Orhan Klardashti :klardashti@gmail.com>, <Jay :jay@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 redirect_from:
   - /use/pop/
   - /use/pop

@@ -1,8 +1,8 @@
 ---
 id: token-summary
 order: 5
-title: The CFG Token
-contributors: <Lucas Vogelsang:lucas@centrifuge.foundation>, <Cassidy Daly:cassidy@centrifuge.foundation>, <Devin Black:devin@k-f.co>
+title: The XFT Token
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 redirect_from:
   - /learn/token-summary
   - /learn/token-summary/

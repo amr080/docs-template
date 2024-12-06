@@ -3,7 +3,7 @@ id: querying-data
 order: 3
 title: Querying data
 category: subpage
-contributors: <NunoAlexandre:nuno@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 ---
 
 # Querying data

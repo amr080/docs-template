@@ -2,7 +2,7 @@
 id: welcome
 order: 1
 title: Welcome to XFT
-contributors: <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /getting-started

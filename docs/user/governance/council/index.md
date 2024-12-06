@@ -2,7 +2,7 @@
 id: council
 order: 5
 title: XFT Council
-contributors: <Orhan Klardashti:klardashti@gmail.com>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /use/council

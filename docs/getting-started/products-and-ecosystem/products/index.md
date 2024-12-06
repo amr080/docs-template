@@ -2,7 +2,7 @@
 id: products
 order: 1
 title: Products Overview
-contributors: <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 ---
 

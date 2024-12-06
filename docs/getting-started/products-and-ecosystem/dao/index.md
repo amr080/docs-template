@@ -2,7 +2,7 @@
 id: dao
 order: 2
 title: The XFT DAO
-contributors: <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 ---
 

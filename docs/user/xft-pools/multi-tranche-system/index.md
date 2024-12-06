@@ -2,7 +2,7 @@
 id: multi-tranche-system
 order: 3
 title: Tranches
-contributors: <Dennis Wellmann:dennis@centrifuge.io>, <Jay:jay@centrifuge.io>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /learn/multi-tranche-system

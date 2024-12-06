@@ -2,7 +2,7 @@
 id: epoch
 order: 2
 title: Epochs and Order Execution
-contributors: <Dennis Wellmann:dennis@centrifuge.io>, <Jay:jay@centrifuge.io>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /learn/epoch

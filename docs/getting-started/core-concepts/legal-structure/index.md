@@ -2,7 +2,7 @@
 id: legal-structure
 order: 5
 title: Legal Structure
-contributors: <Jeroen Offerijns:jeroen@k-f.co>, <Dennis Wellmann:dennis@k-f.co>, <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /getting-started/off-chain

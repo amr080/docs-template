@@ -2,7 +2,7 @@
 id: invest
 order: 3
 title: Investing and Redeeming
-contributors: <Dennis Wellmann:dennis@k-f.co>, <Jay:jay@k-f.co>, <Anna:anna@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /use/Invest

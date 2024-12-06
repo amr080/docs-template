@@ -2,7 +2,7 @@
 id: glossary
 order: 7
 title: Glossary
-contributors: <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 ---
 
 # Glossary

@@ -2,7 +2,7 @@
 id: governance-proxy-and-delegation
 order: 4
 title: Delegation and Proxies
-contributors: <Orhan Klardashti:klardashti@gmail.com>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 ---
 

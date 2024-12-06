@@ -2,7 +2,7 @@
 id: cfg-bridge
 order: 5
 title: CFG (XFT) to CFG (Ethereum)
-contributors: <Lucas Vogelsang:lucas@centrifuge.io>, <Graham Nelson:graham@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 redirect_from:
   - /use/cfg-bridge
   - /use/cfg-bridge/

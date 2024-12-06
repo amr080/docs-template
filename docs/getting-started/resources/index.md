@@ -2,7 +2,7 @@
 id: resources
 order: 6
 title: Resources
-contributors: <Devin Black:devin@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 ---
 
 # Resources

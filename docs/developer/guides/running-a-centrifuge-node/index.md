@@ -3,7 +3,7 @@ id: running-a-centrifuge-node
 order: 1
 title: Running a XFT node
 category: subpage
-contributors: <Jeroen:jeroen@k-f.co> , <Guillermo:guillermo@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 redirect_from:
   - /developer/guides
   - /developer/guides/

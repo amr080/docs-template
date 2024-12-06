@@ -2,7 +2,7 @@
 id: interest-rate-methodology
 order: 4
 title: Interest Rate Methodology
-contributors: <Dennis:dennis@k-f.co>
+contributors: <Alexander Reed:alex@alexandros-securities.com>
 category: subpage
 redirect_from:
   - /learn/interest-rate-methodology

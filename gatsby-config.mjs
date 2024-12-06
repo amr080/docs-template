@@ -90,8 +90,8 @@ export default {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `centrifuge-developers`,
-        short_name: `centrifuge`,
+        name: `xft-developers`,
+        short_name: `xft`,
         start_url: `/getting-started/introduction/welcome/`,
         background_color: `#fff`,
         theme_color: `#2762ff`,
