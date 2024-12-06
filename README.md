@@ -232,15 +232,25 @@ done
 [Connected Git Repository](https://github.com/amr080/docs-template)
 
 ### Netlify
-
 1. Framework preset: Gatsby.js
 2. Output directory:
 3. Install cmd: 
 4. Development cmd: 
 5. Root directory: 
 
+### GitHub Pages
+1. Framework preset: Gatsby.js
+2. Output directory:
+3. Install cmd: 
+4. Development cmd: 
+5. Root directory: 
 
-
+### Replit
+1. Framework preset: Gatsby.js
+2. Output directory:
+3. Install cmd: 
+4. Development cmd: 
+5. Root directory: 
 
 ### DNS
 
@@ -248,6 +258,18 @@ done
 |-------------|----------------------------|-------------|-------------|
 | CNAME     | docs        | cname.vercel-dns.com.        | 1/2 Hour        |
 
+## Detaching fork
+### Dependencies
+1. Retain commits + branches
+2. Retain deployment settings
+    - name: docs-template.git
+    - branches: develop, xft-v1, xft-v2, xft-v3, xft-v4
+    - production: xft-v4
+    - deployment: Vercel
+3. Private
+
+### Steps
+1. git clone --bare https://github.com/amr080/docs-template.git
 
 
 
